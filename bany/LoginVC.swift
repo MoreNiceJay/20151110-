@@ -92,7 +92,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 
                 //let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 
-                //appDelegate.window?.rootViewController = loginNext
+                //appDelegate.window?.rootViewController = loginNext 
             
             }
             
