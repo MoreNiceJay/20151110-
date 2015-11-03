@@ -50,7 +50,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             
             if(error != nil)
             {
-            //display an alert message
+            //displayㄴ an alert message
                 
                 self.alert("error", message : (error?.localizedDescription)!)
                 self.buttonEnabled(self.loginButton)
