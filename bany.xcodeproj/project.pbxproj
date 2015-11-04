@@ -55,6 +55,7 @@
 		6988DC5C1BCABFC300573E51 /* UploadFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DC5B1BCABFC300573E51 /* UploadFirst.swift */; };
 		6988DC5E1BCAC07200573E51 /* UploadSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DC5D1BCAC07200573E51 /* UploadSecond.swift */; };
 		6988DC601BCAC09F00573E51 /* UploadFourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DC5F1BCAC09F00573E51 /* UploadFourth.swift */; };
+		699214481BE9DD0F001F6607 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699214471BE9DD0E001F6607 /* Reachability.swift */; };
 		699C663F1BD59A8000F9349C /* EditDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699C663E1BD59A8000F9349C /* EditDetailTVC.swift */; };
 		699C66431BD618E800F9349C /* MoreInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699C66421BD618E800F9349C /* MoreInfoTVC.swift */; };
 		69A2CA101BE72F140043E9C4 /* TermsOfUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2CA0F1BE72F140043E9C4 /* TermsOfUse.swift */; };
@@ -141,6 +142,7 @@
 		6988DC5B1BCABFC300573E51 /* UploadFirst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFirst.swift; sourceTree = "<group>"; };
 		6988DC5D1BCAC07200573E51 /* UploadSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadSecond.swift; sourceTree = "<group>"; };
 		6988DC5F1BCAC09F00573E51 /* UploadFourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFourth.swift; sourceTree = "<group>"; };
+		699214471BE9DD0E001F6607 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		699C663E1BD59A8000F9349C /* EditDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDetailTVC.swift; sourceTree = "<group>"; };
 		699C66421BD618E800F9349C /* MoreInfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoTVC.swift; sourceTree = "<group>"; };
 		69A2CA0F1BE72F140043E9C4 /* TermsOfUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUse.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			children = (
 				6967287B1BB36CD90012723B /* AppDelegate.swift */,
 				696728811BB36CD90012723B /* Main.storyboard */,
+				699214471BE9DD0E001F6607 /* Reachability.swift */,
 				696728841BB36CD90012723B /* Assets.xcassets */,
 				696728861BB36CD90012723B /* LaunchScreen.storyboard */,
 				696728891BB36CD90012723B /* Info.plist */,
@@ -519,6 +522,7 @@
 				6988DC5C1BCABFC300573E51 /* UploadFirst.swift in Sources */,
 				69BE91311BB5FB90007E7010 /* MainTVC.swift in Sources */,
 				69D19D8D1BE1C8C20096675A /* Data.swift in Sources */,
+				699214481BE9DD0F001F6607 /* Reachability.swift in Sources */,
 				69090AAC1BBE153500C95F56 /* CommentVC.swift in Sources */,
 				697AC4601BE6B9AE00ED1D6D /* SearchPFTVC.swift in Sources */,
 				69BE91351BB859D5007E7010 /* ForgotPasswordVC.swift in Sources */,

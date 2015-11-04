@@ -375,11 +375,11 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                 }
                
                
-                
+                let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
                 
                 
                 post.saveInBackgroundWithBlock({ ( isSucessful: Bool, error : NSError?) -> Void in
-                        
+                    
                         
                         if error == nil {
                             
@@ -392,7 +392,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                             //self.luxuryAlert( "your post uploaded" )
                             
                             
-                            let myAlert = UIAlertController(title: "post saved", message: "see you at main library", preferredStyle: UIAlertControllerStyle.Alert)
+                            let myAlert = UIAlertController(title: "post saved", message: "See you at the main library", preferredStyle: UIAlertControllerStyle.Alert)
                             let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {Void in self.performSegueWithIdentifier("uplaodToMain", sender: self)})
                             myAlert.addAction(okAction)
                             self.presentViewController(myAlert, animated: true, completion: nil)
@@ -507,6 +507,14 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try upload later"), message: ("Post could not be uploaded, there is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
     }
 
 
