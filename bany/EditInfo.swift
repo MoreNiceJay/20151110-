@@ -129,7 +129,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                                 user.setObject(profileImageFile, forKey: "profile_picture")
                                 
                             
-                            let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+                           
                             
                             user.saveInBackgroundWithBlock { (success, error) -> Void in
                                 self.stopActivityIndicator()
@@ -146,7 +146,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                                     
                                     
                                     let myAlert = UIAlertController(title: "Saved", message: "Your information saved", preferredStyle: UIAlertControllerStyle.Alert)
-                                    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { Void in self.performSegueWithIdentifier("unwindEditToMyPost", sender: self)})
+                                    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { Void in self.performSegueWithIdentifier("editToUserInfo", sender: self)})
                                     myAlert.addAction(okAction)
                                     self.presentViewController(myAlert, animated: true, completion: nil)
                                     

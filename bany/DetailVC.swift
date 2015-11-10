@@ -273,15 +273,6 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if (segue.identifier == "detailToComment") {
-            
-            
-            let destViewController : CommentVC = segue.destinationViewController as! CommentVC
-            destViewController.parentObjectID = parentObjectID
-            
-            destViewController.object = object
-            
-                    }
         
         if (segue.identifier == "front") {
             

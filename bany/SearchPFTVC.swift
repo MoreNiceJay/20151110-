@@ -28,7 +28,7 @@ class SearchPFTVC : PFQueryTableViewController, UISearchBarDelegate,UISearchDisp
         }else{
             
             let myAlert = UIAlertController(title: "No network", message:
-                "Your network is not working", preferredStyle:
+                "Network is not working", preferredStyle:
                 UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "Ok", style:
                 UIAlertActionStyle.Default, handler: nil)
