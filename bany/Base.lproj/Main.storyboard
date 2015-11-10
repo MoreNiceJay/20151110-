@@ -4373,7 +4373,7 @@ This Agreement is effective November 10, 2015</string>
     <resources>
         <image name="Logo" width="1024" height="1024"/>
         <image name="PlaceholderPhoto" width="280" height="280"/>
-        <image name="add_person" width="64" height="64"/>
+        <image name="add_person" width="256" height="256"/>
         <image name="ic_add_box" width="24" height="24"/>
         <image name="ic_home" width="24" height="24"/>
         <image name="ic_keyboard_hide" width="24" height="24"/>
