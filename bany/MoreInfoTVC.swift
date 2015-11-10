@@ -76,7 +76,7 @@ class MoreInfoTVC: UITableViewController, UIImagePickerControllerDelegate, UINav
         }else{
             
             if !(nickName.utf16.count < 13 && nickName.utf16.count > 2) {
-                alert("Invalid", message : "nickname must be  3 ~ 12 characters")
+                alert("Invalid", message : "Nickname must be  3 ~ 12 characters")
                 
                 buttonEnabled(saveButton)
                 stopActivityIndicator()
@@ -104,7 +104,7 @@ class MoreInfoTVC: UITableViewController, UIImagePickerControllerDelegate, UINav
                 
                 if !(email.utf16.count > 7 ) {
                     
-                    alert("Invalid", message : "Email must be a valid form")
+                    alert("Invalid", message : "Invalid email address")
                     
                     buttonEnabled(saveButton)
                     stopActivityIndicator()
@@ -130,12 +130,16 @@ class MoreInfoTVC: UITableViewController, UIImagePickerControllerDelegate, UINav
                         user.setObject(profileImageFile, forKey: "profile_picture")
                         
                     }
+                    
+                    
+                     let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+                    
                     user.saveInBackgroundWithBlock { (success, error) -> Void in
                         self.stopActivityIndicator()
                         
                         if (error != nil)
                         {
-                            self.alert("alert", message: (error?.localizedDescription)!)
+                            self.alert("Error", message: (error?.localizedDescription)!)
                         }
                         
                         if(success) {
@@ -144,7 +148,7 @@ class MoreInfoTVC: UITableViewController, UIImagePickerControllerDelegate, UINav
                             
                             
                             
-                            let myAlert = UIAlertController(title: "Success", message: "Your information save in your account", preferredStyle: UIAlertControllerStyle.Alert)
+                            let myAlert = UIAlertController(title: "Success", message: "Your information saved", preferredStyle: UIAlertControllerStyle.Alert)
                             let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { Void in self.performSegueWithIdentifier("moreInfoTVCToMain", sender: self)})
                             myAlert.addAction(okAction)
                             self.presentViewController(myAlert, animated: true, completion: nil)
@@ -360,6 +364,17 @@ func circularImage(image : UIImageView) {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    
+    
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try later"), message: ("Information could not be uploaded, there is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
 
 
 }

@@ -51,7 +51,7 @@ class UploadThird: UITableViewController, UIImagePickerControllerDelegate, UINav
             buttonEnabled(nextButton)
             
             stopActivityIndicator()
-            alert("no Image", message: "pic Image")
+            alert("No Image", message: "Upload Image")
         }else{
             
             buttonEnabled(nextButton)

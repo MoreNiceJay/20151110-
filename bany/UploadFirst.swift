@@ -10,6 +10,8 @@ import UIKit
 
 class  UploadFirst: UITableViewController {
 
+    var reachability : Reachability?
+    var internetConnection : Bool = false
     
     @IBOutlet weak var actInd: UIActivityIndicatorView!
     @IBOutlet weak var titleTextField: UITextField!
@@ -29,8 +31,65 @@ class  UploadFirst: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        actInd.hidden = true
+        stopActivityIndicator()
+        
+        do{ let reachability = try Reachability.reachabilityForInternetConnection()
+            self.reachability = reachability
+        } catch ReachabilityError.FailedToCreateWithAddress(let address) {
+            
+        }
+        catch {}
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "connectionChanged", name: ReachabilityChangedNotification, object: nil)
+        
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if reachability?.isReachable() == true
+        {
+            internetConnection = true
+            buttonEnabled(nextButton)
+            
+        }else{
+            
+            let myAlert = UIAlertController(title: "No network", message:
+                "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style:
+                UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            self.presentViewController(myAlert, animated: true, completion:
+                nil)
+            internetConnection = false
+            buttonDisabeld(nextButton)
+        }
+        
+    }
+    func connectionChanged() {
+        
+        if reachability!.isReachable() {
+            
+            internetConnection = true
+            buttonEnabled(nextButton)
+
+            
+        }else {
+            let myAlert = UIAlertController(title: "No network", message: "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            
+            internetConnection = false
+            buttonDisabeld(nextButton)
+
+            
+        }
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -117,7 +176,7 @@ class  UploadFirst: UITableViewController {
 
            
             
-            self.alert("invalid", message : "you must choose a category")
+            self.alert("Invalid", message : "You must choose a category")
         }else{
         if titleText!.isEmpty || tagText!.isEmpty || priceText!.isEmpty{
             
@@ -127,7 +186,7 @@ class  UploadFirst: UITableViewController {
             stopActivityIndicator()
             
             //유저에게 채워넣으라고 알럴트
-            self.alert("invalid", message : "you must fill in the blank")
+            self.alert("Invalid", message : "You must fill in the blank")
             
             
             
@@ -139,7 +198,7 @@ class  UploadFirst: UITableViewController {
                 
                 stopActivityIndicator()
 
-                alert("Invalid", message : "title must be  2 ~ 45 characters")
+                alert("Invalid", message : "Title must be  2 ~ 45 characters")
                 
             }else{
                 //ㅇㅋ
@@ -150,7 +209,7 @@ class  UploadFirst: UITableViewController {
                     buttonEnabled(nextButton)
                     
                     stopActivityIndicator()
-                    alert("Invalid", message : "tag must be 2 ~ 45 characters")
+                    alert("Invalid", message : "Tag must be 2 ~ 45 characters")
                 
                     
                     

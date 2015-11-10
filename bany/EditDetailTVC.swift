@@ -191,6 +191,11 @@ stopActivityIndicator()
                         object["back_image"] = parseBackFile
                         
                         
+                                
+                                let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+                                
+                                
+                                
                         object.saveInBackgroundWithBlock({ (success, error) -> Void in
                             if error == nil {
                                self.alert("saved", message: "your post has been edited")
@@ -216,13 +221,15 @@ stopActivityIndicator()
 
     @IBAction func deleteButtonTapped(sender: AnyObject) {
     
-    
         
             let query = PFQuery(className: "Posts")
             query.getObjectInBackgroundWithId(self.object.objectId!) { (obj, err) -> Void in
                 if err != nil {
                     //handle error
                 } else {
+                    
+                    
+                    let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeoutForDelete:"), userInfo: nil, repeats: false)
                     
                     
                     obj!.deleteInBackgroundWithBlock({ (success, error) -> Void in
@@ -275,7 +282,7 @@ stopActivityIndicator()
             }
                 
             else{
-                self.backImageView.image = UIImage(named: "AvatarPlaceholder")
+                self.backImageView.image = UIImage(named: "ic_person")
                 
             }
             
@@ -305,27 +312,11 @@ stopActivityIndicator()
                     
                 }
                 
-                
-                
-                
-                
-                
-                
             }
-            
             
         }
         
-        
-        
-        
     }
-    
-    
-    
-    
-    
-    
     
     func startActivityIndicator() {
         self.actInd.hidden = false
@@ -506,7 +497,29 @@ stopActivityIndicator()
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    
+    
+    
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try upload later"), message: ("Post could not be uploaded, there is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func handleUploadTimeoutForDelete(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try later"), message: ("Post could not be deleted, there is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
 
+
+    
     
     
 }

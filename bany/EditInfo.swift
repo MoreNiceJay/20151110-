@@ -69,14 +69,14 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
         
         if (phoneNumber.isEmpty || email.isEmpty || name.isEmpty || nickName.isEmpty ) {
             
-            alert("Invalid", message : "All fields must be filled")
+            alert("Empty blank", message : "All fields must be filled")
             
             buttonEnabled(saveButton)
             stopActivityIndicator()
         }else{
             
             if !(nickName.utf16.count < 13 && nickName.utf16.count > 2) {
-                alert("Invalid", message : "nickname must be  3 ~ 12 characters")
+                alert("Invalid", message : "Nickname must be  3 ~ 12 characters")
                 
                 buttonEnabled(saveButton)
                 stopActivityIndicator()
@@ -84,7 +84,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
             }else{
                 
                 if !(name.utf16.count < 25 && name.utf16.count > 2) {
-                    alert("Invalid", message : "nickname must be  3 ~ 24 characters")
+                    alert("Invalid", message : "Nickname must be  3 ~ 24 characters")
                     
                     buttonEnabled(saveButton)
                     stopActivityIndicator()
@@ -94,7 +94,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                     
                     if !(phoneNumber.utf16.count == 10  ) {
                         // 3보다 크고 16보다 작은게 아니라면
-                        alert("Invalid", message : "phoneNumber 10")
+                        alert("Invalid", message : "phone number must be 10 digit")
                         
                         buttonEnabled(saveButton)
                         stopActivityIndicator()
@@ -104,7 +104,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                         
                         if !(email.utf16.count > 7 ) {
                             
-                            alert("Invalid", message : "email more than 7")
+                            alert("Invalid", message : "Invalid email form")
                             
                             buttonEnabled(saveButton)
                             stopActivityIndicator()
@@ -129,12 +129,14 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                                 user.setObject(profileImageFile, forKey: "profile_picture")
                                 
                             
+                            let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+                            
                             user.saveInBackgroundWithBlock { (success, error) -> Void in
                                 self.stopActivityIndicator()
                                 
                                 if (error != nil)
                                 {
-                                    self.alert("alert", message: (error?.localizedDescription)!)
+                                    self.alert("Error", message: (error?.localizedDescription)!)
                                 }
                                 
                                 if(success) {
@@ -143,13 +145,10 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                                     
                                     
                                     
-                                    let myAlert = UIAlertController(title: "Success", message: "Your information save in your account", preferredStyle: UIAlertControllerStyle.Alert)
+                                    let myAlert = UIAlertController(title: "Saved", message: "Your information saved", preferredStyle: UIAlertControllerStyle.Alert)
                                     let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { Void in self.performSegueWithIdentifier("unwindEditToMyPost", sender: self)})
                                     myAlert.addAction(okAction)
                                     self.presentViewController(myAlert, animated: true, completion: nil)
-                                    
-                                    
-                                    
                                     
                                 }
                             }
@@ -355,7 +354,7 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
                     self.profilePhotoImageView.image = UIImage(data: imageData!)
                 }        }
         }else{
-            self.profilePhotoImageView.image = UIImage(named: "AvatarPlaceholder")
+            self.profilePhotoImageView.image = UIImage(named: "ic_person")
             
         }
         
@@ -371,7 +370,15 @@ class EditInfo: UITableViewController, UIImagePickerControllerDelegate, UINaviga
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
-    
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try later"), message: ("Information could not be updated, there is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
     
     
 }

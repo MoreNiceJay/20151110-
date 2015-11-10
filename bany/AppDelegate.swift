@@ -34,8 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         
-        // Use Reachability to monitor connectivity
-        self.monitorReachability()
         
         
         //자동로그인
@@ -104,29 +102,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func isParseReachable() -> Bool {
         return self.networkStatus != .NotReachable
     }
-    func monitorReachability() {
-        guard let reachability = Reachability(hostname: "api.parse.com") else {
-            return
-        }
-        
-        reachability.whenReachable = { (reach: Reachability) in
-            self.networkStatus = reach.currentReachabilityStatus
-            if self.isParseReachable() && PFUser.currentUser() != nil
-            {
-                // Refresh home timeline on network restoration. Takes care of a freshly installed app that failed to load the main timeline under bad network conditions.
-                // In this case, they'd see the empty timeline placeholder and have no way of refreshing the timeline unless they followed someone.
-                print("what")
-                
-            }
-        }
-        reachability.whenUnreachable = { (reach: Reachability) in
-            self.networkStatus = reach.currentReachabilityStatus
-        }
-        
-        reachability.startNotifier()
-    }
-
-
+    
+    
 
 
 }

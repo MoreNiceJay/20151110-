@@ -13,7 +13,7 @@ import ParseUI
 class SearchPFTVC : PFQueryTableViewController, UISearchBarDelegate,UISearchDisplayDelegate  {
     
     @IBOutlet weak var searchBar: UISearchBar!
-   
+    var reachability : Reachability?
     override func viewDidAppear(animated: Bool) {
         
         // Refresh the table to ensure any data changes are displayed
@@ -21,6 +21,54 @@ class SearchPFTVC : PFQueryTableViewController, UISearchBarDelegate,UISearchDisp
         
         // Delegate the search bar to this table view class
         searchBar.delegate = self
+        
+        if reachability?.isReachable() == true
+        {
+            
+        }else{
+            
+            let myAlert = UIAlertController(title: "No network", message:
+                "Your network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style:
+                UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            self.presentViewController(myAlert, animated: true, completion:
+                nil)
+            
+        }
+
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        do{ let reachability = try Reachability.reachabilityForInternetConnection()
+            self.reachability = reachability
+        } catch ReachabilityError.FailedToCreateWithAddress(let address) {
+            
+        }
+        catch {}
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "connectionChanged", name: ReachabilityChangedNotification, object: nil)
+        
+        
+    }
+
+    
+    func connectionChanged() {
+        
+        if reachability!.isReachable() {
+            
+        }else {
+            let myAlert = UIAlertController(title: "No network", message: "Your network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+        }
     }
     
     

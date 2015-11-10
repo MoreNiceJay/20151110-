@@ -76,7 +76,7 @@ class SignUpVC: UIViewController {
             if (userEmail?.utf16.count < 7) {
                 
                 
-                self.alert("Invalid", message : "email address must be valid")
+                self.alert("Invalid", message : "Invalid email address")
                 buttonEnabled(facebookButton)
                 buttonEnabled(signUpButton)
                 stopActivityIndicator()

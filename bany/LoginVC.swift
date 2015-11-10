@@ -112,13 +112,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         if (username?.utf16.count < 7 || password?.utf16.count < 6) {
            
            
-            self.alert("Invalid", message : "please write valid email address and password")
+            self.alert("Invalid", message : "Invalid email address")
             buttonEnabled(loginButton)
             buttonEnabled(facebookButton)
             self.stopActivityIndicator()
             
             self.passwordField.text = ""
         } else {
+            
+            let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+            
             
             PFUser.logInWithUsernameInBackground(username!, password: password!, block: { (user, error) -> Void in
                 
@@ -198,6 +201,15 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         
     }
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try later"), message: ("There is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("try later", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+
     
     
 

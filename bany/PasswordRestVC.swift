@@ -43,6 +43,9 @@ class PasswordRestVC: UIViewController {
             
         }
         
+        
+        let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+        
         PFUser.requestPasswordResetForEmailInBackground(emailAddress!, block: { (success, error) -> Void in
             if(error != nil)
                 
@@ -111,6 +114,17 @@ class PasswordRestVC: UIViewController {
         return true
         
     }
+    func handleUploadTimeout(aTimer: NSTimer) {
+        stopActivityIndicator()
+        
+        let alertController = UIAlertController(title: ("Try later"), message: ("Your requst could not process. There is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        alertController.addAction(alertAction)
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
 
+
+    
     
 }

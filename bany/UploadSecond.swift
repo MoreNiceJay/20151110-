@@ -57,7 +57,7 @@ class UploadSecond : UITableViewController, UIImagePickerControllerDelegate, UIN
             buttonEnabled(nextButton)
             
             stopActivityIndicator()
-            alert("no Image", message: "Have a rear Image of your product")
+            alert("No Image", message: "Have a rear image of your product")
             
             
             

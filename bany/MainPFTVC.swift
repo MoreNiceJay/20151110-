@@ -12,6 +12,66 @@ import ParseUI
 
 class MainPFTVC : PFQueryTableViewController {
     
+    var reachability : Reachability?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        do{ let reachability = try Reachability.reachabilityForInternetConnection()
+            self.reachability = reachability
+        } catch ReachabilityError.FailedToCreateWithAddress(let address) {
+            
+        }
+        catch {}
+
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "connectionChanged", name: ReachabilityChangedNotification, object: nil)
+        
+        
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if reachability?.isReachable() == true
+        {
+            
+        }else{
+            
+            let myAlert = UIAlertController(title: "No network", message:
+                "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style:
+                UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            self.presentViewController(myAlert, animated: true, completion:
+                nil)
+            
+        }
+        
+    }
+    func connectionChanged() {
+        
+        if reachability!.isReachable() {
+            
+        }else {
+            let myAlert = UIAlertController(title: "No network", message: "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    
     override init(style: UITableViewStyle, className: String?) {
         super.init(style: style, className: className)
         parseClassName = "Posts"
@@ -102,6 +162,7 @@ class MainPFTVC : PFQueryTableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    
     
   
 }

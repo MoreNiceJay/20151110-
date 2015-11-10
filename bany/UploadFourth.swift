@@ -11,40 +11,87 @@ import Parse
 
 class UploadFourth: UITableViewController,UITextFieldDelegate{
 
-    
-    
+    var reachability : Reachability?
+    var internetConnection : Bool = false
+
     @IBOutlet weak var purchasedDateTextField: UITextField!
-    
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var emailSwitch: UISwitch!
-    
     @IBOutlet weak var textSwitch: UISwitch!
     @IBOutlet weak var actInd: UIActivityIndicatorView!
-    
     @IBOutlet weak var uploadButton: UIButton!
     
     var priceText = String()
-
     var category = Int()
     var titleText = String()
     var tagText = String()
     var photoFront = UIImage()
     var photoBack = UIImage()
-    
     var email :String = String()
     var phoneNumber :String = String()
     var uploadPhotoImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+  
         self.stopActivityIndicator()
+        do{ let reachability = try Reachability.reachabilityForInternetConnection()
+            self.reachability = reachability
+        } catch ReachabilityError.FailedToCreateWithAddress(let address) {
+            
+        }
+        catch {}
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "connectionChanged", name: ReachabilityChangedNotification, object: nil)
         
-        
-        // Do any additional setup after loading the view.
+
     }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if reachability?.isReachable() == true
+        {
+            internetConnection = true
+            buttonEnabled(uploadButton)
+            
+        }else{
+            
+            let myAlert = UIAlertController(title: "No network", message:
+                "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style:
+                UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            self.presentViewController(myAlert, animated: true, completion:
+                nil)
+            internetConnection = false
+            buttonDisabeld(uploadButton)
+        }
+        
+    }
+    func connectionChanged() {
+        
+        if reachability!.isReachable() {
+            
+            internetConnection = true
+            buttonEnabled(uploadButton)
+            
+            
+        }else {
+            let myAlert = UIAlertController(title: "No network", message: "Network is not working", preferredStyle:
+                UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+            myAlert.addAction(okAction)
+            
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            
+            internetConnection = false
+            buttonDisabeld(uploadButton)
+            
+        }
+    }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -69,7 +116,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             let emailAlert : UIAlertController = UIAlertController(title: "No email address ", message: "Allow your customer email you ", preferredStyle: UIAlertControllerStyle.Alert)
             
             emailAlert.addTextFieldWithConfigurationHandler({ (textField : UITextField) -> Void in
-                textField.placeholder = "email address"
+                textField.placeholder = "Email address"
                 textField.keyboardType = UIKeyboardType.EmailAddress
             })
             
@@ -97,7 +144,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                     
                     self.stopActivityIndicator()
 
-                    self.alert("Invalid", message : "email must be longer than that")
+                    self.alert("Invalid", message : "Invalid email address")
                     
                     
                     
@@ -127,25 +174,14 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                             self.stopActivityIndicator()
 
                             
-                            self.alert("saved", message : "Email address has been saved")
-                            
-                            
-                            
+                            self.alert("Saved", message : "Email address has been saved")
                         }
-                        
-                        
                     }
                 }
                 
-                
-                
-                
-                
-                
                 }
+                
                 ))
-            
-            
             
             self.presentViewController(emailAlert, animated: true, completion: nil)
             self.buttonEnabled(self.uploadButton)
@@ -157,10 +193,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
     
     @IBAction func textFieldOn(sender: AnyObject) {
         if let numberFromParse = (PFUser.currentUser()?.objectForKey("phone_number") as? String){
-            
-         
-
-            
+     
             phoneNumber = numberFromParse
             
         }else{
@@ -172,7 +205,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
            
             
             
-            let phoneAlert : UIAlertController = UIAlertController(title: "Phone number", message: "allow your customer text you ", preferredStyle: UIAlertControllerStyle.Alert)
+            let phoneAlert : UIAlertController = UIAlertController(title: "Phone number", message: "Allow your customer text you ", preferredStyle: UIAlertControllerStyle.Alert)
             
             let okAction = UIAlertAction(title: "cancel", style: UIAlertActionStyle.Default, handler : { Void in
                 self.textSwitch.on = false
@@ -203,7 +236,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                     
                     self.stopActivityIndicator()
 
-               self.alert("Invalid", message : "phoneNumber must be 10 digits")
+               self.alert("Invalid", message : "PhoneNumber must be 10 digit")
                    
                     
                    
@@ -229,7 +262,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                         
                         self.stopActivityIndicator()
                         
-                        self.alert("saved", message : "Phone number has been saved")
+                        self.alert("Saved", message : "Phone number has been saved")
 
                         
                         
@@ -238,11 +271,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                     
                 }
                 }
-                
-
-                
-                
-                
+               
             }
         ))
             
@@ -278,7 +307,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             
             stopActivityIndicator()
 
-            self.alert("invalid", message : "you must fill in the blank")
+            self.alert("Invalid", message : "You must fill in the all blanks")
             
         }else {
             
@@ -289,7 +318,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                 
                 stopActivityIndicator()
                 
-                alert("Invalid", message : "date must be 4 - 12 digit")
+                alert("Invalid", message : "Date must be 4 - 12 digit")
               
                 
             }else{
@@ -392,7 +421,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                             //self.luxuryAlert( "your post uploaded" )
                             
                             
-                            let myAlert = UIAlertController(title: "post saved", message: "See you at the main library", preferredStyle: UIAlertControllerStyle.Alert)
+                            let myAlert = UIAlertController(title: "Post saved", message: "Your item is uploaded", preferredStyle: UIAlertControllerStyle.Alert)
                             let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {Void in self.performSegueWithIdentifier("uplaodToMain", sender: self)})
                             myAlert.addAction(okAction)
                             self.presentViewController(myAlert, animated: true, completion: nil)

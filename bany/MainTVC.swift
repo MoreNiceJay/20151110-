@@ -225,11 +225,11 @@ class MainTVC: UITableViewController {
 //        
 //        
 //        
-//        
+//
 //
 //
 //    }
-   
+  
     
     func bringCategoryDataFromParse(category : Int) {
     

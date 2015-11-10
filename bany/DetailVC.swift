@@ -208,7 +208,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
                     
                     post.saveInBackgroundWithBlock({ (success, error) -> Void in
                         if error == nil{
-                            (print("good"))
+                            
                             //에러 알림
                         }
                     })
@@ -234,7 +234,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
                     
                     post.saveInBackgroundWithBlock({ (success, error) -> Void in
                         if error == nil{
-                            (print("good"))
+                            
                             //에러 알림
                         }
                     })
@@ -413,9 +413,9 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
             }
                 
             else{
-                self.backImageView.image = UIImage(named: "AvatarPlaceholder")
+                self.backImageView.image = UIImage(named: "PlaceholderPhoto")
                 
-                self.backImage.image = UIImage(named: "AvatarPlaceholder")
+                self.backImage.image = UIImage(named: "PlaceholderPhoto")
                 
             }
             
@@ -441,10 +441,10 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
                 self.frontImage.image = UIImage(data: imageData!)
                 
     }else{
-        self.frontImageView.image = UIImage(named: "AvatarPlaceholder")
+        self.frontImageView.image = UIImage(named: "PlaceholderPhoto")
                 
                 self.frontImage.image =
-                    UIImage(named: "AvatarPlaceholder")
+                    UIImage(named: "PlaceholderPhoto")
 
         }
        
@@ -483,14 +483,14 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
 
         }else{
             //없음 알럴트 주기
-            self.alert("text only", message: "seller prefer text")
+            self.alert("Text only", message: "Seller prefer to be contacted by text(SMS)")
 
             }
                 
             
             
             }else{//팔렸다 하기
-            self.alert("sold", message: "already sold")
+            self.alert("Sold", message: "This Item is already sold")
         }
     
     }
@@ -509,11 +509,11 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
         
         }else{
             
-            self.alert("Email only", message: "seller prefer Email")
+            self.alert("Email only", message: "Seller prefer to be contacted by email")
             //넘버 없다고 말해주기
         }
     }else { //팔렸다고 말해주기
-            self.alert("sold", message: "already sold")
+            self.alert("Sold", message: "This Item is already sold")
     
     }
 

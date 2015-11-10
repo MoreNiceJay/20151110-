@@ -46,7 +46,7 @@ class UserInfoTVC: UITableViewController {
                     self.profileImageView.image = UIImage(data: imageData!)
                 }        }
         }else{
-            self.profileImageView.image = UIImage(named: "AvatarPlaceholder")
+            self.profileImageView.image = UIImage(named: "ic_person")
             
         }
         
