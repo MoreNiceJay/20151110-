@@ -56,6 +56,7 @@
 		6988DC5E1BCAC07200573E51 /* UploadSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DC5D1BCAC07200573E51 /* UploadSecond.swift */; };
 		6988DC601BCAC09F00573E51 /* UploadFourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6988DC5F1BCAC09F00573E51 /* UploadFourth.swift */; };
 		69927F131BF14DFC0007F18F /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69927F121BF14DFC0007F18F /* Reachability.swift */; };
+		69927F911BF1D2460007F18F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69927F901BF1D2460007F18F /* MessageUI.framework */; };
 		699C663F1BD59A8000F9349C /* EditDetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699C663E1BD59A8000F9349C /* EditDetailTVC.swift */; };
 		699C66431BD618E800F9349C /* MoreInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699C66421BD618E800F9349C /* MoreInfoTVC.swift */; };
 		69A2CA101BE72F140043E9C4 /* TermsOfUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2CA0F1BE72F140043E9C4 /* TermsOfUse.swift */; };
@@ -143,6 +144,7 @@
 		6988DC5D1BCAC07200573E51 /* UploadSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadSecond.swift; sourceTree = "<group>"; };
 		6988DC5F1BCAC09F00573E51 /* UploadFourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFourth.swift; sourceTree = "<group>"; };
 		69927F121BF14DFC0007F18F /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		69927F901BF1D2460007F18F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		699C663E1BD59A8000F9349C /* EditDetailTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDetailTVC.swift; sourceTree = "<group>"; };
 		699C66421BD618E800F9349C /* MoreInfoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoTVC.swift; sourceTree = "<group>"; };
 		69A2CA0F1BE72F140043E9C4 /* TermsOfUse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUse.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69927F911BF1D2460007F18F /* MessageUI.framework in Frameworks */,
 				696728D11BB3739E0012723B /* Social.framework in Frameworks */,
 				696728CF1BB373990012723B /* Accounts.framework in Frameworks */,
 				696728CD1BB3738F0012723B /* libsqlite3.tbd in Frameworks */,
@@ -246,6 +249,7 @@
 		6967286F1BB36CD90012723B = {
 			isa = PBXGroup;
 			children = (
+				69927F901BF1D2460007F18F /* MessageUI.framework */,
 				696728B91BB3730F0012723B /* frameworks */,
 				6967287A1BB36CD90012723B /* bany */,
 				696728911BB36CD90012723B /* banyTests */,
@@ -681,6 +685,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -697,6 +702,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -800,6 +806,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = adHoc;
 		};

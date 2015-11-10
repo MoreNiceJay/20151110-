@@ -81,7 +81,7 @@ class SuggestUsTVC: UITableViewController, MFMailComposeViewControllerDelegate {
         default: break
         }
         
-        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     

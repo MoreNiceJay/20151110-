@@ -1228,7 +1228,7 @@ This Agreement is effective November 10, 2015</string>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="Lkq-qz-ebr">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_person" translatesAutoresizingMaskIntoConstraints="NO" id="Lkq-qz-ebr">
                                                     <rect key="frame" x="23" y="23" width="93" height="93"/>
                                                     <animations/>
                                                     <constraints>
@@ -1355,9 +1355,6 @@ This Agreement is effective November 10, 2015</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
-                                        <connections>
-                                            <segue destination="q7h-a3-gvK" kind="show" id="pL1-kG-xTY"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="L1a-xM-9HJ">
                                         <rect key="frame" x="0.0" y="479" width="414" height="44"/>
@@ -1736,7 +1733,7 @@ This Agreement is effective November 10, 2015</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfW-9t-SnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3028" y="2413"/>
+            <point key="canvasLocation" x="3852" y="2269"/>
         </scene>
         <!--Suggest UsTVC-->
         <scene sceneID="F2M-Qa-UNR">
@@ -4382,7 +4379,6 @@ This Agreement is effective November 10, 2015</string>
         <image name="ic_keyboard_hide" width="24" height="24"/>
         <image name="ic_person" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
-        <image name="profile_image" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ITR-nX-yrf"/>

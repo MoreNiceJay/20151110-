@@ -8,8 +8,9 @@
 
 import UIKit
 import Parse
+import MessageUI
 
-class UserInfoTVC: UITableViewController {
+class UserInfoTVC: UITableViewController, MFMailComposeViewControllerDelegate{
 
 
     @IBOutlet weak var nickNameLabel: UILabel!
@@ -71,6 +72,8 @@ class UserInfoTVC: UITableViewController {
     return true
     }
     
+    
+    
     @IBAction func logOutButtonTapped(sender: AnyObject) {
         
         NSUserDefaults.standardUserDefaults().removeObjectForKey("objectId")
@@ -109,10 +112,62 @@ class UserInfoTVC: UITableViewController {
         
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if  indexPath.section == 3 && indexPath.row == 0 {
+            
+            let mailComposeViewContoller = configuredMailComposerViewController()
+            
+            
+            if MFMailComposeViewController.canSendMail() {
+                self.presentViewController(mailComposeViewContoller, animated: true, completion: nil)
+            }else {
+                self.showSendMailErrorAlert()
+            }
+            
+        }
+    }
+    
+    func configuredMailComposerViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        mailComposerVC.setToRecipients(["morenicejay@gmail.com"])
+        mailComposerVC.setSubject("Feedback")
+        mailComposerVC.setMessageBody("Feedback about bany : ", isHTML: false)
+        
+        return mailComposerVC
+        
+    }
+    
+    func showSendMailErrorAlert() {
+        let myAlert = UIAlertController(title: "Could not send email", message: "Try again later", preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        self.presentViewController(myAlert, animated: true, completion: nil)
+        
+    
     }
 
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        switch result.rawValue {
+            
+        case MFMailComposeResultSent.rawValue :
+            print("mail sent")
+        case MFMailComposeResultCancelled.rawValue :
+            print("canceld")
+        case MFMailComposeResultSaved.rawValue :
+            print("saved")
+        case MFMailComposeResultFailed.rawValue :
+            print("failed")
+        
+        default :
+            break
+        }
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+}
     
     
 
-  }
+
