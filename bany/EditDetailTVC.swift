@@ -192,7 +192,7 @@ stopActivityIndicator()
                         
                         
                                 
-                                let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("handleUploadTimeout:"), userInfo: nil, repeats: false)
+                                
                                 
                                 
                                 

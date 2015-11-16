@@ -32,7 +32,6 @@
 		696728C11BB373610012723B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728C01BB373610012723B /* CoreLocation.framework */; };
 		696728C31BB373690012723B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728C21BB373690012723B /* QuartzCore.framework */; };
 		696728C51BB3736F0012723B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728C41BB3736F0012723B /* Security.framework */; };
-		696728C71BB373750012723B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728C61BB373750012723B /* StoreKit.framework */; };
 		696728C91BB3737F0012723B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728C81BB3737F0012723B /* SystemConfiguration.framework */; };
 		696728CB1BB373880012723B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728CA1BB373880012723B /* libz.tbd */; };
 		696728CD1BB3738F0012723B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 696728CC1BB3738F0012723B /* libsqlite3.tbd */; };
@@ -110,7 +109,6 @@
 		696728C01BB373610012723B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		696728C21BB373690012723B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		696728C41BB3736F0012723B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		696728C61BB373750012723B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		696728C81BB3737F0012723B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		696728CA1BB373880012723B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		696728CC1BB3738F0012723B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -152,7 +150,6 @@
 				696728C91BB3737F0012723B /* SystemConfiguration.framework in Frameworks */,
 				696728D51BB37AA20012723B /* FBSDKCoreKit.framework in Frameworks */,
 				696728D71BB37AA20012723B /* FBSDKShareKit.framework in Frameworks */,
-				696728C71BB373750012723B /* StoreKit.framework in Frameworks */,
 				696728C51BB3736F0012723B /* Security.framework in Frameworks */,
 				696728C31BB373690012723B /* QuartzCore.framework in Frameworks */,
 				696728C11BB373610012723B /* CoreLocation.framework in Frameworks */,
@@ -279,7 +276,6 @@
 				696728CC1BB3738F0012723B /* libsqlite3.tbd */,
 				696728CA1BB373880012723B /* libz.tbd */,
 				696728C81BB3737F0012723B /* SystemConfiguration.framework */,
-				696728C61BB373750012723B /* StoreKit.framework */,
 				696728C41BB3736F0012723B /* Security.framework */,
 				696728C21BB373690012723B /* QuartzCore.framework */,
 				696728C01BB373610012723B /* CoreLocation.framework */,
@@ -397,6 +393,12 @@
 				TargetAttributes = {
 					696728771BB36CD90012723B = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 3ZGZB9HCJ8;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					6967288D1BB36CD90012723B = {
 						CreatedOnToolsVersion = 7.0;
@@ -639,6 +641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -657,6 +660,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -762,6 +766,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = adHoc;
 		};

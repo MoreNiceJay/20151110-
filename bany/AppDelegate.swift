@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //자동로그인
         let objectIdCheck : String? = NSUserDefaults.standardUserDefaults().stringForKey("objectId")
         
-        print(objectIdCheck)
         
          if(objectIdCheck != nil)
         {

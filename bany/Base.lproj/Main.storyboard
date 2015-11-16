@@ -1199,7 +1199,7 @@ This Agreement is effective November 10, 2015</string>
                         <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Laq-Xm-zTk">
-                            <rect key="frame" x="0.0" y="541" width="414" height="39"/>
+                            <rect key="frame" x="0.0" y="477" width="414" height="39"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1215,7 +1215,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection id="zgc-t4-YAN">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="140" id="jrr-Yz-hb7">
-                                        <rect key="frame" x="0.0" y="99" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="35" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jrr-Yz-hb7" id="fg5-0V-4iH">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="139"/>
@@ -1272,7 +1272,7 @@ This Agreement is effective November 10, 2015</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="1b8-qa-6on">
-                                        <rect key="frame" x="0.0" y="239" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="175" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1b8-qa-6on" id="4uK-au-ab4">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
@@ -1302,7 +1302,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection id="YR2-tX-f6z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="fjS-1X-71J">
-                                        <rect key="frame" x="0.0" y="319" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="255" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjS-1X-71J" id="nep-Fy-8Ps">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
@@ -1334,7 +1334,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection id="Hot-Rw-dSh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Cdu-uT-FXd">
-                                        <rect key="frame" x="0.0" y="435" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="371" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cdu-uT-FXd" id="bgF-0u-aBI">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
@@ -1357,7 +1357,7 @@ This Agreement is effective November 10, 2015</string>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="L1a-xM-9HJ">
-                                        <rect key="frame" x="0.0" y="479" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="415" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1a-xM-9HJ" id="WAs-fz-4xL">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
@@ -1414,7 +1414,7 @@ This Agreement is effective November 10, 2015</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oSd-VA-Xh2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oSd-VA-Xh2">
                                 <rect key="frame" x="162" y="116" width="90" height="90"/>
                                 <animations/>
                                 <constraints>
@@ -1422,7 +1422,7 @@ This Agreement is effective November 10, 2015</string>
                                     <constraint firstAttribute="height" constant="90" id="w6i-k8-1E4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-Ct-tMi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-Ct-tMi">
                                 <rect key="frame" x="28" y="225" width="359" height="342"/>
                                 <animations/>
                                 <string key="text">We are students of SUNY Albany.  If you want to participate with us like designing, programing,  any other activity, send  us email. we would like to be with you. we hope that this app help our students. Thank you.</string>
@@ -1430,7 +1430,7 @@ This Agreement is effective November 10, 2015</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bany" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-x8-iHc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bany" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-x8-iHc">
                                 <rect key="frame" x="188" y="196" width="38" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1468,7 +1468,7 @@ This Agreement is effective November 10, 2015</string>
                         <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CRQ-4N-jKu">
-                            <rect key="frame" x="0.0" y="486" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="422" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <color key="backgroundColor" red="0.026811079549999998" green="0.021400847010000001" blue="0.0030607741980000001" alpha="0.64666913010000004" colorSpace="calibratedRGB"/>
@@ -1484,7 +1484,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="profile" id="ybH-2P-ags">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="oJj-tZ-Dol">
-                                        <rect key="frame" x="0.0" y="114" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJj-tZ-Dol" id="hxu-8S-bWK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
@@ -1547,7 +1547,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="name" id="xiu-Wk-eA6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Fm-FO-Xnw">
-                                        <rect key="frame" x="0.0" y="285" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="221" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Fm-FO-Xnw" id="rMi-el-qif">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -1594,7 +1594,7 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="private information" id="Evy-bO-uJq">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Xt-la-WDw">
-                                        <rect key="frame" x="0.0" y="380" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="316" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Xt-la-WDw" id="ack-59-T7q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -1632,7 +1632,7 @@ This Agreement is effective November 10, 2015</string>
                                         <animations/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dOG-yI-9KQ">
-                                        <rect key="frame" x="0.0" y="424" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="360" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOG-yI-9KQ" id="O5o-iZ-Eyn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -1748,7 +1748,7 @@ This Agreement is effective November 10, 2015</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSQ-fj-OCw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSQ-fj-OCw">
                                 <rect key="frame" x="87" y="301" width="240" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1760,7 +1760,7 @@ This Agreement is effective November 10, 2015</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Email address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yys-VP-5Q7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Email address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Yys-VP-5Q7">
                                 <rect key="frame" x="107" y="308" width="220" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1771,7 +1771,7 @@ This Agreement is effective November 10, 2015</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEo-KF-Off">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEo-KF-Off">
                                 <rect key="frame" x="87" y="354" width="240" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1784,12 +1784,12 @@ This Agreement is effective November 10, 2015</string>
                                     <action selector="sendButtonTapped:" destination="bj7-Wq-Axq" eventType="touchUpInside" id="dNO-1i-oHE"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-d9-UkR">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-d9-UkR">
                                 <rect key="frame" x="189" y="430" width="37" height="37"/>
                                 <animations/>
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwN-By-Bvd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwN-By-Bvd">
                                 <rect key="frame" x="162" y="148" width="90" height="90"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1801,14 +1801,14 @@ This Agreement is effective November 10, 2015</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will receive an email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDA-tp-voH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You will receive an email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDA-tp-voH">
                                 <rect key="frame" x="87" y="405" width="132" height="16"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-pP-99x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-pP-99x">
                                 <rect key="frame" x="162" y="148" width="90" height="90"/>
                                 <animations/>
                             </imageView>
@@ -3794,7 +3794,7 @@ This Agreement is effective November 10, 2015</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myPostCell" rowHeight="63" id="uhM-VJ-kZL" customClass="MyPostPfTVCE" customModule="bany" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="414" height="63"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhM-VJ-kZL" id="Y4L-Kz-uV8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
