@@ -107,8 +107,9 @@ class  UploadFirst: UITableViewController {
             iclickerSwitch.on = false
             otherSwitch.on = false
             titleLabel.text = "Book title"
+            titleTextField.placeholder = "Title of Your book"
+
             classLabel.text = "Class/author"
-            titleTextField.placeholder  = ""
             titleTextField.text = ""
             tagTextField.placeholder = "ex) Acom203 / Author"
             

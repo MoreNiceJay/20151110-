@@ -438,20 +438,9 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
                     UIImage(named: "PlaceholderPhoto")
 
         }
-       
-        
-        
-        
-   
-    
-    
-            }
-        
-    
+       }
         }
-        
-
-
+       
         }
     
     

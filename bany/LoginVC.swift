@@ -66,12 +66,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             NSUserDefaults.standardUserDefaults().setObject(PFUser.currentUser()?.objectId, forKey: "objectId")
             }
             
-            
-            
-            
-            
-            
-            NSUserDefaults.standardUserDefaults().synchronize()
+                        NSUserDefaults.standardUserDefaults().synchronize()
             
             print("Current user token = \(FBSDKAccessToken.currentAccessToken().tokenString)")
             print("Current user id = \(FBSDKAccessToken.currentAccessToken().userID)")

@@ -194,9 +194,6 @@ class SearchPFTVC : PFQueryTableViewController, UISearchBarDelegate,UISearchDisp
         // Force reload of table data
         self.loadObjects()
     }
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
-
+  
     
 }

@@ -12,7 +12,10 @@ import ParseUI
 
 class MainPFTVC : PFQueryTableViewController {
     
-    var reachability : Reachability?
+    @IBOutlet weak var categorySegment: UISegmentedControl!
+  
+      var reachability : Reachability?
+    var category : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,10 @@ class MainPFTVC : PFQueryTableViewController {
 
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "connectionChanged", name: ReachabilityChangedNotification, object: nil)
+        
+        
+        // navigation bar extender
+        
         
         
     }
@@ -46,10 +53,29 @@ class MainPFTVC : PFQueryTableViewController {
             myAlert.addAction(okAction)
             self.presentViewController(myAlert, animated: true, completion:
                 nil)
-            
+           
         }
         
     }
+    
+    
+    @IBAction func categorySegmentTapped(sender: AnyObject) {
+       
+        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            category = 0
+        case 1:
+            category = 1
+        default:
+            category = 2
+            tableView.reloadData()
+        }
+        
+        
+        
+      
+    
     func connectionChanged() {
         
         if reachability!.isReachable() {
@@ -62,8 +88,9 @@ class MainPFTVC : PFQueryTableViewController {
             
             self.presentViewController(myAlert, animated: true, completion: nil)
         }
-    }
     
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -77,6 +104,8 @@ class MainPFTVC : PFQueryTableViewController {
         parseClassName = "Posts"
         pullToRefreshEnabled = true
         paginationEnabled = true
+        
+
         objectsPerPage = 20
     }
     
@@ -85,22 +114,41 @@ class MainPFTVC : PFQueryTableViewController {
         parseClassName = "Posts"
         pullToRefreshEnabled = true
         paginationEnabled = true
+
+        
         objectsPerPage = 20
     }
+    
+    
     
     override func queryForTable() -> PFQuery {
         let query = PFQuery(className: self.parseClassName!)
         
-        // If no objects are loaded in memory, we look to the cache first to fill the table
-        // and then subsequently do a query against the network.
-        //if self.objects!.count == 0 {
-          //  query.cachePolicy = .CacheThenNetwork
-       // }
+        if category == 0{
+            
+            query.whereKey("category", equalTo : 0)
         
+        }
         query.orderByDescending("createdAt")
         
         return query
     }
+    
+    func queryForCategoryTable( category : Int ) -> PFQuery {
+       
+        
+        let query = PFQuery(className: self.parseClassName!)
+        
+       query.whereKey("category", equalTo : category)
+        query.orderByDescending("createdAt")
+        
+        
+        
+        return query
+        
+        tableView.reloadData()
+    }
+
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell? {
         let cellIdentifier = "mainCell"
@@ -116,7 +164,7 @@ class MainPFTVC : PFQueryTableViewController {
         
         // price label
         let price = (object!["priceText"] as! String)
-        cell!.priceLable.text = " $\(price)"
+        cell!.priceLable.text = "$\(price)"
         
 
         
@@ -159,9 +207,6 @@ class MainPFTVC : PFQueryTableViewController {
             
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-    }
     
     
   

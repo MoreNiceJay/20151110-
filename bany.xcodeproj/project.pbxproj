@@ -234,8 +234,8 @@
 			children = (
 				6967287B1BB36CD90012723B /* AppDelegate.swift */,
 				69927F121BF14DFC0007F18F /* Reachability.swift */,
-				696728811BB36CD90012723B /* Main.storyboard */,
 				696728841BB36CD90012723B /* Assets.xcassets */,
+				696728811BB36CD90012723B /* Main.storyboard */,
 				696728861BB36CD90012723B /* LaunchScreen.storyboard */,
 				696728891BB36CD90012723B /* Info.plist */,
 				69BE91361BB85D74007E7010 /* signUpLogin */,
@@ -637,6 +637,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = bany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,6 +657,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = bany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,6 +764,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = bany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";

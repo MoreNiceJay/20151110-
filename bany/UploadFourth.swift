@@ -56,15 +56,23 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             
         }else{
             
-            let myAlert = UIAlertController(title: "No network", message:
-                "Network is not working", preferredStyle:
-                UIAlertControllerStyle.Alert)
-            let okAction = UIAlertAction(title: "Ok", style:
-                UIAlertActionStyle.Default, handler: nil)
-            myAlert.addAction(okAction)
-            self.presentViewController(myAlert, animated: true, completion:
-                nil)
-            internetConnection = false
+           
+                if #available(iOS 8.0, *) {
+                    let myAlert = UIAlertController(title: "No network", message:
+                        "Network is not working", preferredStyle:
+                        UIAlertControllerStyle.Alert)
+                    let okAction = UIAlertAction(title: "Ok", style:
+                        UIAlertActionStyle.Default, handler: nil)
+                    myAlert.addAction(okAction)
+                    self.presentViewController(myAlert, animated: true, completion:
+                        nil)
+
+                } else {
+                    let a = UIAlertView(title: "No network", message: "Network is not working", delegate: nil, cancelButtonTitle: "Ok")
+                    a.show()
+                }
+           
+                        internetConnection = false
             buttonDisabeld(uploadButton)
         }
         
@@ -78,12 +86,17 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             
             
         }else {
-            let myAlert = UIAlertController(title: "No network", message: "Network is not working", preferredStyle:
-                UIAlertControllerStyle.Alert)
-            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
-            myAlert.addAction(okAction)
-            
-            self.presentViewController(myAlert, animated: true, completion: nil)
+            if #available(iOS 8.0, *) {
+                let myAlert = UIAlertController(title: "No network", message: "Network is not working", preferredStyle:
+                    UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+                myAlert.addAction(okAction)
+                
+                self.presentViewController(myAlert, animated: true, completion: nil)
+
+            } else {
+                let a = UIAlertView(title: "No network", message: "Network is not working", delegate: nil, cancelButtonTitle: "Ok")
+                a.show()            }
             
             internetConnection = false
             buttonDisabeld(uploadButton)
@@ -114,6 +127,8 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             
             
             let emailAlert : UIAlertController = UIAlertController(title: "No email address ", message: "Allow your customer email you ", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            
             
             emailAlert.addTextFieldWithConfigurationHandler({ (textField : UITextField) -> Void in
                 textField.placeholder = "Email address"
@@ -441,15 +456,6 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
         
         
     }
-
-
-
-
-
-
-
-
-
     
     func startActivityIndicator() {
         self.actInd.hidden = false

@@ -115,7 +115,7 @@ class UserInfoTVC: UITableViewController, MFMailComposeViewControllerDelegate{
     
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        if  indexPath.section == 3 && indexPath.row == 0 {
+        if  indexPath.section == 1  && indexPath.row == 0 {
             
             let mailComposeViewContoller = configuredMailComposerViewController()
             
