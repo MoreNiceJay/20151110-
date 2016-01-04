@@ -34,6 +34,10 @@ class WelcomVC: UIViewController {
         performSegueWithIdentifier("welcomeToLogOut", sender: self)
         
     }
+
+
+   
+    
     /*
     // MARK: - Navigation
 
@@ -46,5 +50,6 @@ class WelcomVC: UIViewController {
 
     
 
-}
+
+    }
 }
