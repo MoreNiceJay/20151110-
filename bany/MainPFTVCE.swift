@@ -19,10 +19,20 @@ class MainPFTVCE: PFTableViewCell {
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var soldLabel: UILabel!
     @IBOutlet weak var mainPhoto: UIImageView!
-    @IBOutlet weak var nickNameLabel: UILabel!
-    @IBOutlet weak var profilePhoto: UIImageView!
 
+
+    @IBOutlet weak var classLabel: UILabel!
     
+    @IBOutlet weak var hardnessLabel: UILabel!
+    
+    @IBOutlet weak var assignment: UILabel!
+    @IBOutlet weak var attendance: UILabel!
+    
+    @IBOutlet weak var textBookRQDLabel: UILabel!
+    
+    @IBOutlet weak var moreToSay: UILabel!
+    
+    @IBOutlet weak var soldImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

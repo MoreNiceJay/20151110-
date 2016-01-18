@@ -354,7 +354,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                 
                 stopActivityIndicator()
                 buttonEnabled(uploadButton)
-                self.alert("invalid", message : "you must choose at least one contact method")
+                self.alert("invalid", message : "You must choose at least one contact method")
                 
             }else{
                 

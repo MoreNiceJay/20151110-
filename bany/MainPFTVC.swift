@@ -156,7 +156,7 @@ class MainPFTVC : PFQueryTableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? MainPFTVCE
         
         // Show sold label or not
-        cell!.soldLabel.hidden = !(object!["sold"] as! Bool)
+        cell!.soldImage.hidden = !(object!["sold"] as! Bool)
         
         
         // title Label of post      
@@ -168,7 +168,6 @@ class MainPFTVC : PFQueryTableViewController {
         
         //about Lable
         
-        cell?.aboutLabel.text = (object!["purchasedDate"] as! String)
         
         // time label for posts
         let dateFormatter:NSDateFormatter = NSDateFormatter()
@@ -182,6 +181,33 @@ class MainPFTVC : PFQueryTableViewController {
             let image = UIImage(data: imageData!)
             cell?.mainPhoto.image = image
         }
+        
+        
+        //Info labels
+        
+        if  (object!["category"] as! Int) == 0 {
+            
+        
+            cell?.classLabel.text = "Class Info (\(object!["tagText"] as! String))"
+            cell?.hardnessLabel.text = "Hardness :  \(object!["hardness"] as! String)"
+            cell?.assignment.text = "Assignment :  \(object!["assignment"] as! String)"
+            cell?.attendance.text = "Attendence :  \(object!["attendence"] as! String)"
+            cell?.textBookRQDLabel.text = "Textbook RQD :  \(object!["bookRQD"] as! String)"
+            
+            cell?.moreToSay.text = "\(object!["moreTosay"] as! String)"
+        }
+        
+        if (object!["category"] as! Int) == 1 {
+            
+            cell?.classLabel.text = "Product :  \(object!["tagText"] as! String)"
+            cell?.hardnessLabel.text = "Condition :  \(object!["hardness"] as! String)"
+            cell?.assignment.text = "Purchased :  \(object!["assignment"] as! String)"
+            cell?.attendance.text = "Original$ :  \(object!["attendence"] as! String)"
+            cell?.textBookRQDLabel.text = "New? :  \(object!["bookRQD"] as! String)"
+            
+            cell?.moreToSay.text = " \(object!["moreTosay"] as! String)"
+        }
+
         
        
 //    if cell == nil {

@@ -126,17 +126,17 @@ class  UploadFirst: UITableViewController {
             titleTextField.placeholder = "Title of Your book"
             
             classLabel.text = "Class"
-            tagTextField.placeholder = "ex) Acom203 "
+            tagTextField.placeholder = "ex) Acom203 or ISBN"
             
             
             attendanceLabel.text = "Attendence"
-            attendanceTextField.placeholder = "5 (Everyday) to 0(Never)"
+            attendanceTextField.placeholder = "5 (Everyday) to (Never) 0"
             
             hardnessLabel.text = "Hardness"
-            hardnessTextFeld.placeholder = "5 (Hard) to 0 (Easy)"
+            hardnessTextFeld.placeholder = "5 (Hard) to  (Easy) 0"
             
             assignmentLabel.text = "Assignement"
-            assignmentTextField.placeholder = "5 (Lots) to 0 (None)"
+            assignmentTextField.placeholder = "5 (Lots) to (None) 0"
             
             bookRQDLabel.text = "Book RQD"
             notRQDLabel.text = "Not Required"
@@ -165,10 +165,10 @@ class  UploadFirst: UITableViewController {
             
             
             attendanceLabel.text = "Condition"
-            attendanceTextField.placeholder = "5 (Everyday) to 0(Never)"
+            attendanceTextField.placeholder = "5 (Everyday) to (Never) 0"
             
-            hardnessLabel.text = "Purchased Year"
-            hardnessTextFeld.placeholder = "Ex) 2014"
+            hardnessLabel.text = "Purchased"
+            hardnessTextFeld.placeholder = "When did you buy? Ex) 2014"
             
             assignmentLabel.text = "Original price"
             assignmentTextField.placeholder = "$"
@@ -228,7 +228,7 @@ class  UploadFirst: UITableViewController {
             
             self.alert("Invalid", message : "You must choose a category")
         }else{
-        if titleText!.isEmpty || tagText!.isEmpty || priceText!.isEmpty || attendenceText!.isEmpty || hardnessText!.isEmpty || assignmentText!.isEmpty {
+        if titleText!.isEmpty || tagText!.isEmpty || priceText!.isEmpty  {
             
             
             buttonEnabled(nextButton)
@@ -242,7 +242,7 @@ class  UploadFirst: UITableViewController {
             
         }else {
             
-            if  !(moreText!.utf16.count <= 30  ) {
+            if  !(moreText!.utf16.count <= 31  ) {
                 // 3보다 크고 16보다 작은게 아니라면
                 buttonEnabled(nextButton)
                 
@@ -252,7 +252,7 @@ class  UploadFirst: UITableViewController {
             }else if moreText!.isEmpty {
             
                 
-                aboutClassTextField.text = ""
+                aboutClassTextField.text = "-"
             }
             
             if !(titleText!.utf16.count <= 45 && titleText!.utf16.count >= 2 ) {
@@ -278,6 +278,18 @@ class  UploadFirst: UITableViewController {
                     
                     }else{
                         //굿투고
+                    
+                    if  attendenceText!.isEmpty{
+                        attendanceTextField.text = "-"
+                        
+                    }
+                    if hardnessText!.isEmpty {
+                        hardnessTextFeld.text = "-"
+                        
+                    }
+                    if assignmentText!.isEmpty{
+                        assignmentTextField.text = "-"
+                    }
 
                     buttonEnabled(nextButton)
                     

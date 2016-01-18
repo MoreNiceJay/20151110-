@@ -112,7 +112,7 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
             self.titleLabel.text = object.objectForKey("titleText") as? String
             self.descriptionTextLabel.text = object.valueForKey("descriptionText") as? String
             self.priceLabel.text = "$" + (object.valueForKey("priceText") as? String)!
-            self.purchasedDateLabel.text = object.valueForKey("purchasedDate") as? String
+//            self.purchasedDateLabel.text = object.valueForKey("purchasedDate") as? String
             
             self.firstTagTextLabel.text = (object!.valueForKey("tagText") as? String)!
 
@@ -375,7 +375,6 @@ class DetailVC: UIViewController, UIScrollViewDelegate {
        self.titleLabel.text = post!.valueForKey("titleText") as? String
        self.descriptionTextLabel.text = post!.valueForKey("descriptionText") as? String
         self.priceLabel.text =  "$" + (post!.valueForKey("priceText") as? String)!
-        self.purchasedDateLabel.text = post!.valueForKey("purchasedDate") as? String
 
         self.tagTextLabel.text =  post!.valueForKey("tagText") as? String
         self.nickNameLabel.text = post!.valueForKey("nickName") as? String
