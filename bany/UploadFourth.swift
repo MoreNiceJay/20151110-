@@ -13,14 +13,20 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
 
     var reachability : Reachability?
     var internetConnection : Bool = false
-
-    @IBOutlet weak var purchasedDateTextField: UITextField!
+    
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var emailSwitch: UISwitch!
     @IBOutlet weak var textSwitch: UISwitch!
     @IBOutlet weak var actInd: UIActivityIndicatorView!
     @IBOutlet weak var uploadButton: UIButton!
     
+    
+    var attendence : String!
+    var hardness : String!
+    var assignment : String!
+    var bookRQD : String!
+    
+    var moreToSay: String!
     var priceText = String()
     var category = Int()
     var titleText = String()
@@ -309,11 +315,10 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
         startActivityIndicator()
         buttonDisabeld(uploadButton)
         
-        let purchasedDate = purchasedDateTextField.text
         let descriptionText = descriptionTextView.text
         
        
-        if  purchasedDate!.isEmpty || descriptionText!.isEmpty{
+        if   descriptionText!.isEmpty{
             
             
             //유저에게 채워넣으라고 알럴트
@@ -322,22 +327,11 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
             
             stopActivityIndicator()
 
-            self.alert("Invalid", message : "You must fill in the all blanks")
+            self.alert("Invalid", message : "You must fill in Description/Damage blank")
             
         }else {
             
-            if !(purchasedDate!.utf16.count > 3 && purchasedDate!.utf16.count < 13 ) {
-                // 3보다 크고 16보다 작은게 아니라면
-                
-                buttonEnabled(uploadButton)
-                
-                stopActivityIndicator()
-                
-                alert("Invalid", message : "Date must be 4 - 12 digit")
-              
-                
-            }else{
-                //ㅇㅋ
+                           //ㅇㅋ
                 
                 if !(descriptionText.utf16.count <= 200 && descriptionText.utf16.count >= 2 ) {
                     
@@ -391,7 +385,15 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                     post["front_image"] = parseFrontFile
                     post["back_image"] = parseBackFile
                     post["descriptionText"] = descriptionText
-                    post["purchasedDate"] = purchasedDate
+                
+                    post["attendence"] = attendence
+                    post["hardness"]  = hardness
+                    post["assignment"]  = assignment
+                    post["bookRQD"] = bookRQD
+                
+                    post["moreTosay"] = moreToSay
+
+                
                     post["searchText"] = searchText
                 
                 
@@ -446,17 +448,21 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
                             
                             self.alert("Error", message : (error?.localizedDescription)!)
                         }
-                    })
-                    
+                })
+                
                        }
-        }
-    }
-        }
         
-        
-        
-    }
+            }
     
+        }
+
+    }
+        
+        
+
+    
+
+
     func startActivityIndicator() {
         self.actInd.hidden = false
         self.actInd.startAnimating()
@@ -472,8 +478,7 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
 
-        purchasedDateTextField.resignFirstResponder()
-                descriptionTextView.resignFirstResponder()
+                        descriptionTextView.resignFirstResponder()
         
         
     }
@@ -535,7 +540,6 @@ class UploadFourth: UITableViewController,UITextFieldDelegate{
         
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        purchasedDateTextField.resignFirstResponder()
         
         return true
         

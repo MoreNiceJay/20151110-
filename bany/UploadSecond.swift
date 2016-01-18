@@ -9,10 +9,19 @@
 import UIKit
 
 class UploadSecond : UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    var attendence : String!
+    var hardness : String!
+    var assignment : String!
+    var bookRQD : String!
+    
+    var moreToSay: String!
     var priceText = String()
     var category = Int()
     var titleText = String()
     var tagText = String()
+    
+    
+    
     @IBOutlet weak var picturButton: UIButton!
     
     @IBOutlet weak var nextButton: UIButton!
@@ -85,6 +94,13 @@ performSegueWithIdentifier("uploadSecondToUploadThrid", sender: self)
             destViewController.tagText = tagText
             destViewController.photoFront   = photoOne!
             destViewController.priceText = priceText
+            destViewController.attendence = attendence
+            destViewController.hardness  = hardness
+            destViewController.assignment  = assignment
+            destViewController.bookRQD = bookRQD
+            
+            destViewController.moreToSay = moreToSay
+
         }
     }
     

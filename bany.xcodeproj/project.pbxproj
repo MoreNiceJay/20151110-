@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034BD8601C49FF910043AC08 /* IntroVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BD85F1C49FF910043AC08 /* IntroVCViewController.swift */; };
 		690256AA1BE591000045F19E /* MainPFTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690256A91BE591000045F19E /* MainPFTVC.swift */; };
 		690256AC1BE5C6AE0045F19E /* MainPFTVCE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690256AB1BE5C6AE0045F19E /* MainPFTVCE.swift */; };
 		69090AAA1BBDD81000C95F56 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69090AA91BBDD81000C95F56 /* DetailVC.swift */; };
@@ -78,6 +79,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034BD85F1C49FF910043AC08 /* IntroVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVCViewController.swift; sourceTree = "<group>"; };
 		690256A91BE591000045F19E /* MainPFTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPFTVC.swift; sourceTree = "<group>"; };
 		690256AB1BE5C6AE0045F19E /* MainPFTVCE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPFTVCE.swift; sourceTree = "<group>"; };
 		69090AA91BBDD81000C95F56 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				69BE91341BB859D5007E7010 /* ForgotPasswordVC.swift */,
 				699C66421BD618E800F9349C /* MoreInfoTVC.swift */,
 				69A2CA0F1BE72F140043E9C4 /* TermsOfUse.swift */,
+				034BD85F1C49FF910043AC08 /* IntroVCViewController.swift */,
 			);
 			name = signUpLogin;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				6988DC5E1BCAC07200573E51 /* UploadSecond.swift in Sources */,
 				696728D91BB394D20012723B /* UserInfoTVC.swift in Sources */,
 				690256AA1BE591000045F19E /* MainPFTVC.swift in Sources */,
+				034BD8601C49FF910043AC08 /* IntroVCViewController.swift in Sources */,
 				6967287C1BB36CD90012723B /* AppDelegate.swift in Sources */,
 				69E190161BE62FF100B576D6 /* MyPostPF.swift in Sources */,
 				69BE912B1BB47AC8007E7010 /* SignUpVC.swift in Sources */,
@@ -631,6 +635,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,7 +647,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e88ad24a-4310-4575-9af1-ffbefd9ddcb1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -651,6 +657,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -661,7 +669,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e88ad24a-4310-4575-9af1-ffbefd9ddcb1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -758,6 +766,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -768,7 +778,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "morenicejay-gmail.com.bany";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e88ad24a-4310-4575-9af1-ffbefd9ddcb1";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = adHoc;

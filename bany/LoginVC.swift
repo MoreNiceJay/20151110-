@@ -75,10 +75,28 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             {
                 self.buttonEnabled(self.loginButton)
                 self.buttonEnabled(self.facebookButton)
-                self.stopActivityIndicator()
+
+                //인트로페이지
+                let introPage : String? = NSUserDefaults.standardUserDefaults().stringForKey("introPage")
+                
+                
+                if(introPage == nil)
+                {
+                    
+                    let mainStroyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    
+                    let IntroVC: IntroVCViewController = mainStroyBoard.instantiateViewControllerWithIdentifier("IntroVCViewController") as! IntroVCViewController
+                    
+                    let welcomeNav = UINavigationController(rootViewController : IntroVC)
+                    
+                    let appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    
+                    appDelegate.window?.rootViewController = IntroVC
+                }else{
+
                 self.performSegueWithIdentifier("loginToMain", sender: self)
                 
-                self.stopActivityIndicator()
+                    self.stopActivityIndicator()}
 
                 //다른페이지로 확실히 이동
                 //let loginNext = self.storyboard?.instantiateViewControllerWithIdentifier("LoginNextVC") as! LoginNextVC
@@ -126,14 +144,44 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     self.stopActivityIndicator()
                     self.buttonEnabled(self.loginButton)
                        self.buttonEnabled(self.facebookButton)
+                    
+                    //인트로페이지
+                    let introPage : String? = NSUserDefaults.standardUserDefaults().stringForKey("introPage")
+                    
+                    
+                    if(introPage == nil)
+                    {
+                        
+                        NSUserDefaults.standardUserDefaults().setObject(PFUser.currentUser()?.objectId, forKey: "objectId")
+                        NSUserDefaults.standardUserDefaults().synchronize()
+                        
+                        
+                        let mainStroyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        let IntroVC: IntroVCViewController = mainStroyBoard.instantiateViewControllerWithIdentifier("IntroVCViewController") as! IntroVCViewController
+                        
+                        let welcomeNav = UINavigationController(rootViewController : IntroVC)
+                        
+                        let appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        
+                        appDelegate.window?.rootViewController = IntroVC
+                    }else{
+
+                        NSUserDefaults.standardUserDefaults().setObject(PFUser.currentUser()?.objectId, forKey: "objectId")
+                        NSUserDefaults.standardUserDefaults().synchronize()
+                        
+                        self.passwordField.text = ""
+                    
                     self.performSegueWithIdentifier("loginToMain", sender: self)
                         self.alert("Success", message : "Logged In")
+                    }
                     
                     
-                    NSUserDefaults.standardUserDefaults().setObject(PFUser.currentUser()?.objectId, forKey: "objectId")
-                    NSUserDefaults.standardUserDefaults().synchronize()
                     
-                    self.passwordField.text = ""
+                  
+                    
+                    
+                    
                 }else {
                     
                     self.alert("login failed", message : (error?.localizedDescription)!)
@@ -200,7 +248,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         stopActivityIndicator()
         
         let alertController = UIAlertController(title: ("Try later"), message: ("There is an Internet connection problem."), preferredStyle: UIAlertControllerStyle.Alert)
-        let alertAction = UIAlertAction(title: NSLocalizedString("try later", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
+        let alertAction = UIAlertAction(title: NSLocalizedString("Try later", comment: ""), style: UIAlertActionStyle.Cancel, handler: nil)
         alertController.addAction(alertAction)
         presentViewController(alertController, animated: true, completion: nil)
     }

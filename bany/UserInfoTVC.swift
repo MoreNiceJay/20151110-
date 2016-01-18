@@ -77,16 +77,24 @@ class UserInfoTVC: UITableViewController, MFMailComposeViewControllerDelegate{
     @IBAction func logOutButtonTapped(sender: AnyObject) {
         
         NSUserDefaults.standardUserDefaults().removeObjectForKey("objectId")
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("introPage")
+
         NSUserDefaults.standardUserDefaults().synchronize()
+
+        
+       
+        
+        
+        
         
         PFUser.logOutInBackground()
         
     performSegueWithIdentifier("logoutToLogin", sender: self)
         
         
-            
-            
-            
+        
+        
+        
             
             //유저에게 메세지 보내기
             
@@ -128,6 +136,7 @@ class UserInfoTVC: UITableViewController, MFMailComposeViewControllerDelegate{
             
         }
     }
+    
     
     func configuredMailComposerViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()

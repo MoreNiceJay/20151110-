@@ -149,13 +149,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hkQ-Go-maw">
-                                <rect key="frame" x="162" y="80" width="90" height="90"/>
-                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kE7-HT-rxq">
                                 <rect key="frame" x="189" y="405" width="37" height="37"/>
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hkQ-Go-maw">
+                                <rect key="frame" x="162" y="80" width="90" height="90"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99036829699999995" green="0.87273203040000003" blue="0.15544769459999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="596"/>
+            <point key="canvasLocation" x="-258" y="600"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="T1Y-1g-ImO">
@@ -359,10 +359,10 @@
                             <tableViewSection headerTitle="use of temrs" id="fSs-jP-oYa">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="1200" id="Nls-Hm-2Zz">
-                                        <rect key="frame" x="0.0" y="49.5" width="414" height="1200"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="1200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nls-Hm-2Zz" id="Wio-Dj-vnk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="1199.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifQ-Ql-4FB">
@@ -696,7 +696,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="113.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iQx-sH-VXJ" id="LkC-ST-RMb">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_person" translatesAutoresizingMaskIntoConstraints="NO" id="0Qa-GF-7Nh">
@@ -716,7 +716,7 @@ This Agreement is effective November 10, 2015</string>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgZ-AG-ue5">
-                                                    <rect key="frame" x="145" y="30.5" width="56.5" height="14.5"/>
+                                                    <rect key="frame" x="145" y="31" width="57" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -756,7 +756,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="283.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="APM-gj-Rr2" id="9YK-rr-x4I">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzh-ig-1eG">
@@ -798,11 +798,11 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="377.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6o-bS-EFv" id="fmn-GT-gwW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSq-1u-NyG">
-                                                    <rect key="frame" x="14" y="14" width="40.5" height="15"/>
+                                                    <rect key="frame" x="14" y="14" width="41" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -831,7 +831,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="421.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Okn-3n-DXr" id="hdr-GF-HZ2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hed-LR-H1w">
@@ -870,7 +870,7 @@ This Agreement is effective November 10, 2015</string>
                     <navigationItem key="navigationItem" title="Info" id="jk8-xb-KHk">
                         <barButtonItem key="rightBarButtonItem" title="Skip" id="cK0-5V-BBr">
                             <connections>
-                                <segue destination="49e-Tb-3d3" kind="presentation" id="SMf-er-OjS"/>
+                                <segue destination="ynK-gM-dNN" kind="presentation" modalTransitionStyle="coverVertical" id="ehK-wd-QJp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -883,12 +883,57 @@ This Agreement is effective November 10, 2015</string>
                         <outlet property="phoneNumberTextField" destination="OfJ-h4-b1s" id="BOx-0n-C29"/>
                         <outlet property="profilePhotoImageView" destination="0Qa-GF-7Nh" id="IGi-pH-uX2"/>
                         <outlet property="saveButton" destination="4G6-pE-GfL" id="YLU-QC-rVk"/>
-                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="moreInfoTVCToMain" id="XtH-cP-jqd"/>
+                        <segue destination="ynK-gM-dNN" kind="presentation" identifier="moreInfoTVCToMain" modalTransitionStyle="coverVertical" id="BBD-p3-Ehq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyG-Nd-uHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="-267"/>
+            <point key="canvasLocation" x="-190" y="-839"/>
+        </scene>
+        <!--IntroVC View Controller-->
+        <scene sceneID="k7w-Ls-X0S">
+            <objects>
+                <viewController storyboardIdentifier="IntroVCViewController" id="ynK-gM-dNN" customClass="IntroVCViewController" customModule="bany" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eft-dl-yC8"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Qn-CZ-jCv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="af3-c6-3Rw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="3vi-le-6Kf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMw-7u-ozp">
+                                <rect key="frame" x="77" y="596" width="221" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4L6-3f-om9"/>
+                                </constraints>
+                                <state key="normal" title="Got It" backgroundImage="whiteButton"/>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" modalTransitionStyle="crossDissolve" id="fFb-Lg-e7h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AMw-7u-ozp" firstAttribute="centerX" secondItem="3vi-le-6Kf" secondAttribute="centerX" id="0Tr-z2-gNY"/>
+                            <constraint firstItem="3vi-le-6Kf" firstAttribute="width" secondItem="af3-c6-3Rw" secondAttribute="width" id="D6G-ES-01U"/>
+                            <constraint firstItem="AMw-7u-ozp" firstAttribute="top" secondItem="3vi-le-6Kf" secondAttribute="bottom" constant="-71" id="J1m-hO-DLe"/>
+                            <constraint firstItem="3vi-le-6Kf" firstAttribute="centerX" secondItem="af3-c6-3Rw" secondAttribute="centerX" id="mgN-p6-Nrm"/>
+                            <constraint firstItem="3vi-le-6Kf" firstAttribute="centerY" secondItem="af3-c6-3Rw" secondAttribute="centerY" id="qkD-DO-zIg"/>
+                            <constraint firstItem="3vi-le-6Kf" firstAttribute="height" secondItem="af3-c6-3Rw" secondAttribute="height" id="zNs-qu-U9p"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="gotItButton" destination="AMw-7u-ozp" id="mhr-ML-HMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znp-Hh-A6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467.5" y="-932.5"/>
         </scene>
         <!--User-->
         <scene sceneID="ml1-ag-snM">
@@ -916,11 +961,11 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="35" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jrr-Yz-hb7" id="fg5-0V-4iH">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="139.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-Eb-TJq">
-                                                    <rect key="frame" x="137" y="44.5" width="11.5" height="13.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My ID &amp; Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mf-Eb-TJq">
+                                                    <rect key="frame" x="137" y="44" width="75" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -932,13 +977,13 @@ This Agreement is effective November 10, 2015</string>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIr-7F-rYg">
-                                                    <rect key="frame" x="344" y="58" width="28.5" height="23"/>
+                                                    <rect key="frame" x="344" y="58" width="29" height="23"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.26956625449999999" blue="0.5682015467" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va6-XU-le1">
-                                                    <rect key="frame" x="137" y="59" width="67" height="20.5"/>
+                                                    <rect key="frame" x="137" y="59" width="67" height="21"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -967,7 +1012,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="175" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1b8-qa-6on" id="4uK-au-ab4">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeR-4u-y0P">
@@ -990,7 +1035,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="219" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjS-1X-71J" id="nep-Fy-8Ps">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljz-V6-yrv">
@@ -1016,11 +1061,11 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="299" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cdu-uT-FXd" id="bgF-0u-aBI">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggest us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-vf-5bO">
-                                                    <rect key="frame" x="23" y="11" width="77" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Contact us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-vf-5bO">
+                                                    <rect key="frame" x="24" y="11" width="76" height="21"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1036,7 +1081,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="343" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1a-xM-9HJ" id="WAs-fz-4xL">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vC-nq-hRF">
@@ -1094,14 +1139,14 @@ This Agreement is effective November 10, 2015</string>
                                     <constraint firstAttribute="height" constant="90" id="w6i-k8-1E4"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-Ct-tMi">
-                                <rect key="frame" x="28" y="225" width="359" height="342"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-Ct-tMi">
+                                <rect key="frame" x="28" y="181" width="359" height="435"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">We are students of SUNY Albany.             Join our team!  We need designer, android developer, marketer and any other students who can work with us.                    I hope this app helps you guys. Thank you</string>
+                                        <string key="content">Why...                                                                         We are students of UAlbany, we think textbook ix too expensive.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="HelveticaNeue-Thin"/>
+                                            <font key="NSFont" size="20" name="AppleSDGothicNeo-UltraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="8" defaultTabInterval="2" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
@@ -1161,14 +1206,14 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="49.5" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJj-tZ-Dol" id="hxu-8S-bWK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_person" translatesAutoresizingMaskIntoConstraints="NO" id="f1E-Na-1Tf">
                                                     <rect key="frame" x="38" y="12" width="95" height="95"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prefer name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHF-6Z-sRL">
-                                                    <rect key="frame" x="163" y="32" width="69" height="14.5"/>
+                                                    <rect key="frame" x="163" y="32" width="69" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1218,7 +1263,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="219.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Fm-FO-Xnw" id="rMi-el-qif">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CUS-g5-uBz">
@@ -1260,7 +1305,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="313.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Xt-la-WDw" id="ack-59-T7q">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NG7-eu-Dol">
@@ -1294,7 +1339,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="357.5" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOG-yI-9KQ" id="O5o-iZ-Eyn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aGU-gs-YUr">
@@ -1463,11 +1508,11 @@ This Agreement is effective November 10, 2015</string>
             <objects>
                 <tableViewController id="3ah-DT-oXC" customClass="UploadFirst" customModule="bany" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="CXZ-Sr-XJu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jBw-bS-vdD">
-                            <rect key="frame" x="0.0" y="572" width="414" height="45"/>
+                            <rect key="frame" x="0.0" y="783" width="414" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" image="nextButton">
@@ -1480,67 +1525,54 @@ This Agreement is effective November 10, 2015</string>
                         <sections>
                             <tableViewSection id="FcH-LY-xPN">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="223" id="dKL-nc-8p4">
-                                        <rect key="frame" x="0.0" y="99" width="414" height="223"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="dKL-nc-8p4">
+                                        <rect key="frame" x="0.0" y="99" width="414" height="164"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dKL-nc-8p4" id="Iv3-kb-3TI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="222.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="163.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hWN-4y-mXR">
-                                                    <rect key="frame" x="105.5" y="143" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.026811079549999998" green="0.021400847010000001" blue="0.0030607741980000001" alpha="0.64666913010000004" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="otherSwitchIsOn:" destination="3ah-DT-oXC" eventType="valueChanged" id="3V7-BK-dE0"/>
-                                                    </connections>
-                                                </switch>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uUv-Jh-ctw">
-                                                    <rect key="frame" x="105.5" y="96" width="51" height="31"/>
+                                                    <rect key="frame" x="106" y="96" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.026811079549999998" green="0.021400847010000001" blue="0.0030607741980000001" alpha="0.64666913010000004" colorSpace="calibratedRGB"/>
                                                     <connections>
-                                                        <action selector="iclickerSwitchIsOn:" destination="3ah-DT-oXC" eventType="valueChanged" id="TvD-63-Tpr"/>
+                                                        <action selector="otherSwitchIsOn:" destination="3ah-DT-oXC" eventType="valueChanged" id="IP9-PC-j7J"/>
                                                     </connections>
                                                 </switch>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93q-SV-GfU">
-                                                    <rect key="frame" x="105.5" y="49" width="51" height="31"/>
+                                                    <rect key="frame" x="106" y="49" width="51" height="31"/>
                                                     <color key="onTintColor" red="0.026811079549999998" green="0.021400847010000001" blue="0.0030607741980000001" alpha="0.64666913010000004" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="bookSwitchIsOn:" destination="3ah-DT-oXC" eventType="valueChanged" id="BFB-QS-wNC"/>
                                                     </connections>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I clicker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKq-al-1JW">
-                                                    <rect key="frame" x="169.5" y="113.5" width="35.5" height="13.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKq-al-1JW">
+                                                    <rect key="frame" x="170" y="114" width="27" height="13"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vH-qQ-aS6">
-                                                    <rect key="frame" x="169.5" y="160.5" width="27" height="13.5"/>
-                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd4-rN-zXR">
-                                                    <rect key="frame" x="191" y="66" width="27" height="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zd4-rN-zXR">
+                                                    <rect key="frame" x="170" y="67" width="23" height="13"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white logo" translatesAutoresizingMaskIntoConstraints="NO" id="CQt-j0-hTH">
-                                                    <rect key="frame" x="359" y="179" width="35" height="35"/>
+                                                    <rect key="frame" x="359" y="120" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="Nhg-ad-Ror"/>
                                                         <constraint firstAttribute="width" secondItem="CQt-j0-hTH" secondAttribute="height" multiplier="1:1" id="pE4-90-BBA"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select one" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zy-Fi-fAY">
-                                                    <rect key="frame" x="13" y="27" width="64.5" height="18"/>
+                                                    <rect key="frame" x="13" y="27" width="65" height="18"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8W-Vt-eb5">
-                                                    <rect key="frame" x="248" y="195" width="111" height="13.5"/>
+                                                    <rect key="frame" x="248" y="136" width="111" height="14"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Sell your stuff with Bany">
                                                             <attributes>
@@ -1556,7 +1588,6 @@ This Agreement is effective November 10, 2015</string>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="O8W-Vt-eb5" secondAttribute="bottom" constant="6" id="0Xk-vm-67n"/>
-                                                <constraint firstItem="hWN-4y-mXR" firstAttribute="top" secondItem="uUv-Jh-ctw" secondAttribute="bottom" constant="16" id="815-bc-8um"/>
                                                 <constraint firstItem="93q-SV-GfU" firstAttribute="leading" secondItem="2zy-Fi-fAY" secondAttribute="trailing" constant="28" id="Crp-dt-l1s"/>
                                                 <constraint firstItem="uUv-Jh-ctw" firstAttribute="trailing" secondItem="93q-SV-GfU" secondAttribute="trailing" id="IM7-aa-Bi6"/>
                                                 <constraint firstItem="zd4-rN-zXR" firstAttribute="leading" secondItem="93q-SV-GfU" secondAttribute="trailing" constant="15" id="LCc-sD-JSr"/>
@@ -1564,13 +1595,9 @@ This Agreement is effective November 10, 2015</string>
                                                 <constraint firstItem="2zy-Fi-fAY" firstAttribute="top" secondItem="Iv3-kb-3TI" secondAttribute="topMargin" constant="19" id="LvX-Hd-Hk3"/>
                                                 <constraint firstItem="93q-SV-GfU" firstAttribute="top" secondItem="2zy-Fi-fAY" secondAttribute="bottom" constant="4" id="QNE-fy-IBE"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="CQt-j0-hTH" secondAttribute="bottom" constant="0.5" id="Sca-R7-ipa"/>
-                                                <constraint firstItem="hWN-4y-mXR" firstAttribute="leading" secondItem="uUv-Jh-ctw" secondAttribute="leading" id="dIV-3O-FaP"/>
                                                 <constraint firstItem="uUv-Jh-ctw" firstAttribute="leading" secondItem="93q-SV-GfU" secondAttribute="leading" id="eWt-ke-WIY"/>
-                                                <constraint firstItem="4vH-qQ-aS6" firstAttribute="leading" secondItem="ZKq-al-1JW" secondAttribute="leading" id="hWg-aM-DKg"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="CQt-j0-hTH" secondAttribute="trailing" constant="12" id="iBB-Oz-HIl"/>
-                                                <constraint firstItem="4vH-qQ-aS6" firstAttribute="bottom" secondItem="hWN-4y-mXR" secondAttribute="bottom" id="kds-RH-5xL"/>
                                                 <constraint firstItem="CQt-j0-hTH" firstAttribute="leading" secondItem="O8W-Vt-eb5" secondAttribute="trailing" id="mVc-la-gDB"/>
-                                                <constraint firstItem="hWN-4y-mXR" firstAttribute="trailing" secondItem="uUv-Jh-ctw" secondAttribute="trailing" id="o6H-pm-hyQ"/>
                                                 <constraint firstItem="ZKq-al-1JW" firstAttribute="bottom" secondItem="uUv-Jh-ctw" secondAttribute="bottom" id="s9Q-fs-Nad"/>
                                                 <constraint firstItem="zd4-rN-zXR" firstAttribute="bottom" secondItem="93q-SV-GfU" secondAttribute="bottom" id="sgb-6c-HpW"/>
                                                 <constraint firstItem="ZKq-al-1JW" firstAttribute="leading" secondItem="zd4-rN-zXR" secondAttribute="leading" id="whw-kP-Nf4"/>
@@ -1583,10 +1610,10 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="product" id="fWx-2g-8by">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="ms3-y7-Ajg">
-                                        <rect key="frame" x="0.0" y="372" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="313" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ms3-y7-Ajg" id="aLP-aS-8A6">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Diu-9O-FVe">
@@ -1628,10 +1655,10 @@ This Agreement is effective November 10, 2015</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="XuX-Yi-peH">
-                                        <rect key="frame" x="0.0" y="416" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="357" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XuX-Yi-peH" id="vZ2-ax-ASS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdB-Ak-Dup">
@@ -1666,13 +1693,219 @@ This Agreement is effective November 10, 2015</string>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="About class" id="sv0-5U-ZDj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="h3g-DW-q2R">
+                                        <rect key="frame" x="0.0" y="451" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3g-DW-q2R" id="AEi-FP-wNk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attendence" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng4-gC-UvW">
+                                                    <rect key="frame" x="14" y="14" width="62" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 (Everytime) to 0(None)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XaO-do-mGh">
+                                                    <rect key="frame" x="88" y="1" width="326" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="410" width="240" height="30"/>
+                                                    </variation>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ng4-gC-UvW" firstAttribute="leading" secondItem="AEi-FP-wNk" secondAttribute="leadingMargin" constant="6" id="AId-nb-XdI"/>
+                                                <constraint firstItem="ng4-gC-UvW" firstAttribute="centerY" secondItem="AEi-FP-wNk" secondAttribute="centerY" id="Agf-Ez-hK3"/>
+                                                <constraint firstAttribute="bottom" secondItem="XaO-do-mGh" secondAttribute="bottom" id="D1m-vh-tWc"/>
+                                                <constraint firstItem="XaO-do-mGh" firstAttribute="leading" secondItem="AEi-FP-wNk" secondAttribute="leadingMargin" constant="80" id="SIB-eq-7dU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ng4-gC-UvW" secondAttribute="bottom" constant="6" id="cvm-vJ-wzn"/>
+                                                <constraint firstItem="ng4-gC-UvW" firstAttribute="top" secondItem="AEi-FP-wNk" secondAttribute="topMargin" constant="6" id="ijg-tL-hop"/>
+                                                <constraint firstAttribute="trailing" secondItem="XaO-do-mGh" secondAttribute="trailing" id="nem-6T-NCg"/>
+                                                <constraint firstItem="XaO-do-mGh" firstAttribute="top" secondItem="AEi-FP-wNk" secondAttribute="top" constant="1" id="wmZ-Ok-qPC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="mdH-oM-Ybq">
+                                        <rect key="frame" x="0.0" y="495" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdH-oM-Ybq" id="i9I-Dr-6MW">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkN-9d-OM6">
+                                                    <rect key="frame" x="14" y="14" width="50" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="298" width="132" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 (Hard) to 0 (Easy)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gC-Jd-AUW">
+                                                    <rect key="frame" x="88" y="0.0" width="326" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="314" width="240" height="30"/>
+                                                    </variation>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wkN-9d-OM6" firstAttribute="leading" secondItem="i9I-Dr-6MW" secondAttribute="leadingMargin" constant="6" id="41E-Kc-1iH"/>
+                                                <constraint firstItem="9gC-Jd-AUW" firstAttribute="leading" secondItem="i9I-Dr-6MW" secondAttribute="leadingMargin" constant="80" id="5PQ-LC-wcl"/>
+                                                <constraint firstItem="wkN-9d-OM6" firstAttribute="centerY" secondItem="i9I-Dr-6MW" secondAttribute="centerY" id="7ay-vC-XPO"/>
+                                                <constraint firstAttribute="trailing" secondItem="9gC-Jd-AUW" secondAttribute="trailing" id="Bw4-la-ewx"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wkN-9d-OM6" secondAttribute="bottom" constant="6" id="PEg-xe-xP3"/>
+                                                <constraint firstAttribute="bottom" secondItem="9gC-Jd-AUW" secondAttribute="bottom" id="eQV-Og-dW4"/>
+                                                <constraint firstItem="wkN-9d-OM6" firstAttribute="top" secondItem="i9I-Dr-6MW" secondAttribute="topMargin" constant="6" id="l8R-ag-X2w"/>
+                                                <constraint firstItem="9gC-Jd-AUW" firstAttribute="top" secondItem="i9I-Dr-6MW" secondAttribute="top" id="nIp-G5-KuV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="rJt-pf-eY4">
+                                        <rect key="frame" x="0.0" y="539" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJt-pf-eY4" id="AzK-pi-wGG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRy-Ph-3IH">
+                                                    <rect key="frame" x="14" y="14" width="62" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5 (Lots) to 0 (None)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-To-mNH">
+                                                    <rect key="frame" x="88" y="1" width="326" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="410" width="240" height="30"/>
+                                                    </variation>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FRy-Ph-3IH" firstAttribute="top" secondItem="AzK-pi-wGG" secondAttribute="topMargin" constant="6" id="5GC-k5-uSf"/>
+                                                <constraint firstItem="XEh-To-mNH" firstAttribute="leading" secondItem="AzK-pi-wGG" secondAttribute="leadingMargin" constant="80" id="EyY-YY-m6n"/>
+                                                <constraint firstAttribute="trailing" secondItem="XEh-To-mNH" secondAttribute="trailing" id="MNO-Ro-9gW"/>
+                                                <constraint firstItem="FRy-Ph-3IH" firstAttribute="centerY" secondItem="AzK-pi-wGG" secondAttribute="centerY" id="PVq-cC-vFS"/>
+                                                <constraint firstAttribute="bottom" secondItem="XEh-To-mNH" secondAttribute="bottom" id="jyR-Wq-X9U"/>
+                                                <constraint firstItem="XEh-To-mNH" firstAttribute="top" secondItem="AzK-pi-wGG" secondAttribute="top" constant="1" id="nJR-9i-Hdg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FRy-Ph-3IH" secondAttribute="bottom" constant="6" id="s0H-9y-42h"/>
+                                                <constraint firstItem="FRy-Ph-3IH" firstAttribute="leading" secondItem="AzK-pi-wGG" secondAttribute="leadingMargin" constant="6" id="xEY-I7-Jzb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="KLY-bZ-Xsv">
+                                        <rect key="frame" x="0.0" y="583" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KLY-bZ-Xsv" id="Cjm-8Z-vvg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book RQD" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6s-aa-n6s">
+                                                    <rect key="frame" x="16" y="14" width="54" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pC6-CS-aiV">
+                                                    <rect key="frame" x="183" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.026811079549999998" green="0.021400847010000001" blue="0.0030607741980000001" alpha="0.64666913010000004" colorSpace="calibratedRGB"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Requird" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOg-GQ-gqJ">
+                                                    <rect key="frame" x="110" y="16" width="63" height="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requeird" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxS-IZ-tCb">
+                                                    <rect key="frame" x="247" y="16" width="47" height="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="G6s-aa-n6s" secondAttribute="bottom" constant="7" id="0Cg-tE-7mz"/>
+                                                <constraint firstItem="G6s-aa-n6s" firstAttribute="top" secondItem="Cjm-8Z-vvg" secondAttribute="topMargin" constant="6" id="2YC-AK-BTE"/>
+                                                <constraint firstItem="pC6-CS-aiV" firstAttribute="centerY" secondItem="Cjm-8Z-vvg" secondAttribute="centerY" id="8xH-lJ-G7i"/>
+                                                <constraint firstItem="WOg-GQ-gqJ" firstAttribute="centerY" secondItem="Cjm-8Z-vvg" secondAttribute="centerY" id="Etq-tb-o6M"/>
+                                                <constraint firstItem="pC6-CS-aiV" firstAttribute="leading" secondItem="WOg-GQ-gqJ" secondAttribute="trailing" constant="10" id="IbR-lU-AiB"/>
+                                                <constraint firstItem="pC6-CS-aiV" firstAttribute="centerY" secondItem="Cjm-8Z-vvg" secondAttribute="centerY" id="UVY-I4-p8D"/>
+                                                <constraint firstItem="pC6-CS-aiV" firstAttribute="centerX" secondItem="Cjm-8Z-vvg" secondAttribute="centerX" id="Vv9-MQ-IdC"/>
+                                                <constraint firstItem="AxS-IZ-tCb" firstAttribute="leading" secondItem="pC6-CS-aiV" secondAttribute="trailing" constant="15" id="WQS-2Y-93t"/>
+                                                <constraint firstItem="G6s-aa-n6s" firstAttribute="leading" secondItem="Cjm-8Z-vvg" secondAttribute="leadingMargin" constant="8" id="aLx-e2-0jd"/>
+                                                <constraint firstItem="G6s-aa-n6s" firstAttribute="centerY" secondItem="Cjm-8Z-vvg" secondAttribute="centerY" id="dP5-qU-4uP"/>
+                                                <constraint firstItem="AxS-IZ-tCb" firstAttribute="centerY" secondItem="Cjm-8Z-vvg" secondAttribute="centerY" id="iJF-ET-Isv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="aoh-cc-AH4">
+                                        <rect key="frame" x="0.0" y="627" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aoh-cc-AH4" id="MjO-r4-unq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vu-8s-IQp">
+                                                    <rect key="frame" x="19" y="14" width="27" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="394" width="144" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Something more to say?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-pP-cDV">
+                                                    <rect key="frame" x="88" y="1" width="326" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="88" y="410" width="240" height="30"/>
+                                                    </variation>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="tUp-pP-cDV" secondAttribute="trailing" id="0dS-T6-sxA"/>
+                                                <constraint firstItem="7vu-8s-IQp" firstAttribute="centerY" secondItem="MjO-r4-unq" secondAttribute="centerY" id="4De-t9-N1D"/>
+                                                <constraint firstItem="7vu-8s-IQp" firstAttribute="leading" secondItem="MjO-r4-unq" secondAttribute="leadingMargin" constant="11" id="4ae-cg-9Tu"/>
+                                                <constraint firstAttribute="bottom" secondItem="tUp-pP-cDV" secondAttribute="bottom" id="ccF-aL-Qse"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7vu-8s-IQp" secondAttribute="bottom" constant="6" id="dK2-nW-eB4"/>
+                                                <constraint firstItem="tUp-pP-cDV" firstAttribute="top" secondItem="MjO-r4-unq" secondAttribute="top" constant="1" id="gEj-js-Tng"/>
+                                                <constraint firstItem="tUp-pP-cDV" firstAttribute="leading" secondItem="MjO-r4-unq" secondAttribute="leadingMargin" constant="80" id="tRX-Mm-AjO"/>
+                                                <constraint firstItem="7vu-8s-IQp" firstAttribute="top" secondItem="MjO-r4-unq" secondAttribute="topMargin" constant="6" id="yhI-GC-oHP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="price" id="rop-sW-LN8">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Lus-Ch-YXW">
-                                        <rect key="frame" x="0.0" y="510" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="721" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lus-Ch-YXW" id="uQY-zK-PZC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYR-bm-C4J">
@@ -1720,14 +1953,26 @@ This Agreement is effective November 10, 2015</string>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
+                        <outlet property="YesRQDLabel" destination="AxS-IZ-tCb" id="MfI-PC-IqM"/>
+                        <outlet property="aboutClassLabel" destination="7vu-8s-IQp" id="wLG-z2-Na3"/>
+                        <outlet property="aboutClassTextField" destination="tUp-pP-cDV" id="N6i-aj-tMI"/>
                         <outlet property="actInd" destination="m02-3l-g9e" id="QEa-dT-RJN"/>
+                        <outlet property="assignmentLabel" destination="FRy-Ph-3IH" id="ng7-rG-jOA"/>
+                        <outlet property="assignmentTextField" destination="XEh-To-mNH" id="H4C-KW-6v8"/>
+                        <outlet property="attendanceLabel" destination="ng4-gC-UvW" id="KXm-N8-M12"/>
+                        <outlet property="attendanceTextField" destination="XaO-do-mGh" id="L76-Fi-Gjq"/>
+                        <outlet property="bookRQDLabel" destination="G6s-aa-n6s" id="GmV-IA-OJ4"/>
+                        <outlet property="bookRQDSwitch" destination="pC6-CS-aiV" id="YdY-Xn-f36"/>
                         <outlet property="bookSwitch" destination="93q-SV-GfU" id="YLp-id-kUs"/>
                         <outlet property="classLabel" destination="ZdB-Ak-Dup" id="fqM-kS-Mdk"/>
-                        <outlet property="iclickerSwitch" destination="uUv-Jh-ctw" id="DLV-Kl-Itt"/>
+                        <outlet property="hardnessLabel" destination="wkN-9d-OM6" id="GCG-Uf-nv2"/>
+                        <outlet property="hardnessTextFeld" destination="9gC-Jd-AUW" id="RM6-YD-u8D"/>
                         <outlet property="nextButton" destination="jBw-bS-vdD" id="ve6-tm-b61"/>
-                        <outlet property="otherSwitch" destination="hWN-4y-mXR" id="64a-Ge-yvc"/>
+                        <outlet property="notRQDLabel" destination="WOg-GQ-gqJ" id="Puj-oI-Uh0"/>
+                        <outlet property="otherSwitch" destination="uUv-Jh-ctw" id="yei-qz-wN4"/>
                         <outlet property="priceTextField" destination="ODt-R0-fcB" id="WKp-19-qvH"/>
                         <outlet property="tagTextField" destination="xpA-2S-SSX" id="sfQ-kv-XMx"/>
                         <outlet property="titleLabel" destination="Diu-9O-FVe" id="ZNZ-oD-vLn"/>
@@ -1748,7 +1993,7 @@ This Agreement is effective November 10, 2015</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U43-NJ-lOh">
-                            <rect key="frame" x="0.0" y="567.5" width="414" height="45"/>
+                            <rect key="frame" x="0.0" y="503.5" width="414" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" image="nextButton">
@@ -1762,10 +2007,10 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="rear shot" footerTitle="White background" id="OUV-xq-PSv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="427" id="giG-5V-jeH">
-                                        <rect key="frame" x="0.0" y="113.5" width="414" height="427"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="427"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="giG-5V-jeH" id="Zc5-pU-mKG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="426.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="427"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceholderPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="zth-NH-XeX">
@@ -1832,7 +2077,7 @@ This Agreement is effective November 10, 2015</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m1r-CW-28l">
-                            <rect key="frame" x="0.0" y="568.5" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="504.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" image="nextButton">
@@ -1846,10 +2091,10 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="back shot" footerTitle="White background" id="C0a-7w-Tjj">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="428" id="mND-kT-iS2">
-                                        <rect key="frame" x="0.0" y="113.5" width="414" height="428"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="428"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mND-kT-iS2" id="M86-43-xUC">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="427.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="428"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceholderPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="VTS-06-qpm">
@@ -1917,7 +2162,7 @@ This Agreement is effective November 10, 2015</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Uvz-7h-Hcj">
-                            <rect key="frame" x="0.0" y="494" width="414" height="45"/>
+                            <rect key="frame" x="0.0" y="386" width="414" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" image="saveButton">
@@ -1931,10 +2176,10 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection id="XcK-OZ-V1y">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="dIj-jX-pNv">
-                                        <rect key="frame" x="0.0" y="99" width="414" height="147"/>
+                                        <rect key="frame" x="0.0" y="35" width="414" height="147"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dIj-jX-pNv" id="RtZ-CW-6vo">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="146.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="147"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5ki-JE-9bq">
@@ -1952,7 +2197,7 @@ This Agreement is effective November 10, 2015</string>
                                                     </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-jx-F8o">
-                                                    <rect key="frame" x="131" y="58" width="72.5" height="13.5"/>
+                                                    <rect key="frame" x="131" y="58" width="73" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1965,19 +2210,19 @@ This Agreement is effective November 10, 2015</string>
                                                     </variation>
                                                 </activityIndicatorView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jft-Mu-BdI">
-                                                    <rect key="frame" x="131" y="94" width="28" height="13.5"/>
+                                                    <rect key="frame" x="131" y="94" width="28" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact method" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woe-85-tfk">
-                                                    <rect key="frame" x="13" y="8" width="100.5" height="18"/>
+                                                    <rect key="frame" x="13" y="8" width="101" height="18"/>
                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ8-rb-4Cb">
-                                                    <rect key="frame" x="295.5" y="132.5" width="110" height="13.5"/>
+                                                    <rect key="frame" x="296" y="133" width="110" height="13"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Go trade at Main lIbrary">
                                                             <attributes>
@@ -1988,7 +2233,7 @@ This Agreement is effective November 10, 2015</string>
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIR-zJ-QtT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIR-zJ-QtT">
                                                     <rect key="frame" x="295" y="114" width="54" height="16"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Bany tip">
@@ -2009,7 +2254,7 @@ This Agreement is effective November 10, 2015</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white logo" translatesAutoresizingMaskIntoConstraints="NO" id="lo6-Sh-ftU">
-                                                    <rect key="frame" x="247.5" y="104.5" width="45" height="45"/>
+                                                    <rect key="frame" x="248" y="105" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="284-5a-Eis"/>
                                                         <constraint firstAttribute="width" secondItem="lo6-Sh-ftU" secondAttribute="height" multiplier="1:1" id="pHd-ru-jLc"/>
@@ -2041,58 +2286,21 @@ This Agreement is effective November 10, 2015</string>
                             </tableViewSection>
                             <tableViewSection headerTitle="product Info" id="552-Wj-FJr">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="geh-03-bA1">
-                                        <rect key="frame" x="0.0" y="296" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="geh-03-bA1" id="xhg-V4-9yL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchased date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVj-x5-fIj">
-                                                    <rect key="frame" x="14" y="0.0" width="83" height="44"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="88" y="298" width="132" height="21"/>
-                                                    </variation>
-                                                </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex) 2012/05" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hZ-ca-6fP">
-                                                    <rect key="frame" x="108" y="1" width="306" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
-                                                    <variation key="heightClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="88" y="314" width="240" height="30"/>
-                                                    </variation>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2hZ-ca-6fP" firstAttribute="leading" secondItem="xhg-V4-9yL" secondAttribute="leadingMargin" constant="100" id="BOL-7l-BDw"/>
-                                                <constraint firstItem="LVj-x5-fIj" firstAttribute="centerY" secondItem="xhg-V4-9yL" secondAttribute="centerY" id="FdT-Wp-qL9"/>
-                                                <constraint firstItem="2hZ-ca-6fP" firstAttribute="top" secondItem="xhg-V4-9yL" secondAttribute="top" constant="1" id="NYd-iC-Wbb"/>
-                                                <constraint firstItem="LVj-x5-fIj" firstAttribute="top" secondItem="xhg-V4-9yL" secondAttribute="topMargin" constant="-8" id="Tnz-aD-vYN"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LVj-x5-fIj" secondAttribute="bottom" constant="-9" id="cNn-wd-ACi"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2hZ-ca-6fP" secondAttribute="trailing" constant="-8" id="cca-sN-JHo"/>
-                                                <constraint firstAttribute="bottom" secondItem="2hZ-ca-6fP" secondAttribute="bottom" id="fJj-sT-qfz"/>
-                                                <constraint firstItem="LVj-x5-fIj" firstAttribute="leading" secondItem="xhg-V4-9yL" secondAttribute="leadingMargin" constant="6" id="rDQ-75-EH8"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="u1B-GO-M6d">
-                                        <rect key="frame" x="0.0" y="340" width="414" height="136"/>
+                                        <rect key="frame" x="0.0" y="232" width="414" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u1B-GO-M6d" id="I7P-91-LX2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="135.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhn-8E-gts">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description / Damage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhn-8E-gts">
                                                     <rect key="frame" x="15" y="20" width="399" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="leJ-cv-hwC">
-                                                    <rect key="frame" x="15" y="43.5" width="384" height="77"/>
+                                                    <rect key="frame" x="15" y="44" width="384" height="77"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="0.22" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2131,7 +2339,6 @@ This Agreement is effective November 10, 2015</string>
                         <outlet property="actInd" destination="mgf-sa-TpS" id="iJI-W3-3mj"/>
                         <outlet property="descriptionTextView" destination="leJ-cv-hwC" id="sjf-Zx-1ig"/>
                         <outlet property="emailSwitch" destination="3cv-Vw-bV6" id="LG0-Oq-3Th"/>
-                        <outlet property="purchasedDateTextField" destination="2hZ-ca-6fP" id="Sd8-IT-VJQ"/>
                         <outlet property="textSwitch" destination="5ki-JE-9bq" id="YOS-Hz-10q"/>
                         <outlet property="uploadButton" destination="Uvz-7h-Hcj" id="Wbx-dy-rAk"/>
                         <segue destination="TS4-UX-cvK" kind="unwind" identifier="" unwindAction="welcomeUnwindToSegue:" id="IGC-oq-zJj"/>
@@ -2142,7 +2349,7 @@ This Agreement is effective November 10, 2015</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoF-RX-bfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="TS4-UX-cvK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5215" y="1468"/>
+            <point key="canvasLocation" x="5215" y="1495"/>
         </scene>
         <!--WelcomVC-->
         <scene sceneID="Oeh-Px-0dn">
@@ -2184,7 +2391,7 @@ This Agreement is effective November 10, 2015</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXh-HQ-xv7">
-                                <rect key="frame" x="35" y="445" width="348.5" height="38.5"/>
+                                <rect key="frame" x="35" y="445" width="349" height="39"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Happy New semester!                               ">
                                         <attributes>
@@ -2237,7 +2444,7 @@ This Agreement is effective November 10, 2015</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qss-kf-qr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246" y="386"/>
+            <point key="canvasLocation" x="890" y="570"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -2259,7 +2466,7 @@ This Agreement is effective November 10, 2015</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1161" y="68"/>
+            <point key="canvasLocation" x="1273" y="-452"/>
         </scene>
         <!--Post-->
         <scene sceneID="PT5-aT-tQB">
@@ -2283,7 +2490,7 @@ This Agreement is effective November 10, 2015</string>
                                                 <rect key="frame" x="33" y="831" width="348" height="56"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickNmae" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-dI-R5Q">
-                                                        <rect key="frame" x="53" y="11" width="51.5" height="14.5"/>
+                                                        <rect key="frame" x="53" y="11" width="52" height="15"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2296,7 +2503,7 @@ This Agreement is effective November 10, 2015</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipu-E2-Ehd">
-                                                        <rect key="frame" x="53" y="27" width="51.5" height="10"/>
+                                                        <rect key="frame" x="53" y="27" width="52" height="10"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="8"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -2369,7 +2576,7 @@ This Agreement is effective November 10, 2015</string>
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact seller" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaK-fW-flB">
-                                                <rect key="frame" x="30" y="803" width="354" height="19.5"/>
+                                                <rect key="frame" x="30" y="803" width="354" height="20"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2401,14 +2608,14 @@ This Agreement is effective November 10, 2015</string>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchased date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-rw-bqc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This class is.. / Purchased date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-rw-bqc">
                                                         <rect key="frame" x="5" y="52" width="338" height="16"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="purchased date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35A-pz-Doj">
-                                                        <rect key="frame" x="10" y="73" width="328" height="13.5"/>
+                                                        <rect key="frame" x="10" y="73" width="328" height="14"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2420,7 +2627,7 @@ This Agreement is effective November 10, 2015</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tagText" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAK-KN-SH4">
-                                                        <rect key="frame" x="10" y="28" width="328" height="13.5"/>
+                                                        <rect key="frame" x="10" y="28" width="328" height="14"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="11"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2498,19 +2705,19 @@ This Agreement is effective November 10, 2015</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1W-2O-cjU">
-                                                <rect key="frame" x="189" y="760" width="35" height="23.5"/>
+                                                <rect key="frame" x="189" y="760" width="35" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.61306423611111116" green="0.085480426433709733" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRO-CM-KGc">
-                                                <rect key="frame" x="137" y="761" width="43.5" height="20.5"/>
+                                                <rect key="frame" x="137" y="761" width="44" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaJ-BQ-vWc">
-                                                <rect key="frame" x="38" y="82" width="33.5" height="18"/>
+                                                <rect key="frame" x="38" y="82" width="34" height="18"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="15"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2704,10 +2911,10 @@ This Agreement is effective November 10, 2015</string>
                             <tableViewSection headerTitle="rear photo" footerTitle="Can't change rear photo for security reasons" id="wVn-f5-hVt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="jlf-0F-hIo">
-                                        <rect key="frame" x="0.0" y="113.5" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="114" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jlf-0F-hIo" id="q6N-fT-q58">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="299.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-XU-cyq">
@@ -2730,7 +2937,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="480" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ea2-LK-q4F" id="DNx-9X-mTU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="299.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="08Z-Ft-HHo">
@@ -2768,7 +2975,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="830" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pJ1-0B-ahW" id="fcp-wD-ohd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-MY-4D0">
@@ -2797,7 +3004,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="874" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TZp-V3-W8n" id="DkI-b1-60e">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Product" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKa-td-lMj">
@@ -2834,7 +3041,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="968" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U5u-PX-0G0" id="DbQ-RR-Wud">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-lE-E0B">
@@ -2863,7 +3070,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="1012" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rm2-lN-WxQ" id="OXE-6g-Fh7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchased date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6K-fQ-VmC">
@@ -2893,7 +3100,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="1056" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHa-c3-gOm" id="iRg-jo-dUS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSw-AJ-JhK">
@@ -2929,7 +3136,7 @@ This Agreement is effective November 10, 2015</string>
                                         <rect key="frame" x="0.0" y="1212" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4ZO-LN-wGY" id="t9z-j0-aYh">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGJ-MM-m1b">
@@ -3093,37 +3300,44 @@ This Agreement is effective November 10, 2015</string>
                                 <rect key="frame" x="0.0" y="92" width="414" height="355"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXI-54-ENL" id="J0m-fz-yjO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="355"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-DY-9FV">
-                                            <rect key="frame" x="16" y="307" width="382" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                            <rect key="frame" x="18" y="307" width="382" height="21"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJL-jf-Zps">
-                                            <rect key="frame" x="16" y="8" width="382" height="297"/>
-                                            <color key="backgroundColor" red="0.82472504339999997" green="0.82577730429999996" blue="0.80786415990000005" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="QJL-jf-Zps" secondAttribute="height" multiplier="382:297" id="X7x-fb-VCH"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sy-5G-9BD">
-                                            <rect key="frame" x="16" y="115" width="382" height="82.5"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="69"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sy-5G-9BD">
+                                            <rect key="frame" x="318" y="8" width="49" height="33"/>
+                                            <color key="backgroundColor" red="0.68441506409999997" green="0.046073154460000001" blue="0.078852462250000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text=" Price : " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-Nk-ax0">
-                                            <rect key="frame" x="16" y="331" width="41" height="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="assignment : 5" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS9-kc-WL5">
+                                            <rect key="frame" x="19" y="169" width="145" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About this class(Acom203)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOy-pP-bf4">
+                                            <rect key="frame" x="16" y="117" width="170" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPF-Nk-ax0">
+                                            <rect key="frame" x="19" y="331" width="38" height="14"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yId-wt-Nak">
-                                            <rect key="frame" x="379" y="332.5" width="18.5" height="11"/>
+                                            <rect key="frame" x="379" y="333" width="19" height="11"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Time">
                                                     <attributes>
@@ -3136,34 +3350,75 @@ This Agreement is effective November 10, 2015</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34I-pZ-vTi">
-                                            <rect key="frame" x="58" y="328" width="36" height="19"/>
+                                            <rect key="frame" x="57" y="328" width="36" height="19"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                            <color key="textColor" red="0.68419471153846156" green="0.2679669564337947" blue="0.18637259929087288" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hardness :    5" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXc-zT-oGh">
+                                            <rect key="frame" x="19" y="143" width="145" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Attendance :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9j-Ws-WDV">
+                                            <rect key="frame" x="19" y="195" width="145" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Textbook required :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D62-XM-qpI">
+                                            <rect key="frame" x="19" y="221" width="145" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tell me more:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnZ-xf-jma">
+                                            <rect key="frame" x="19" y="247" width="145" height="18"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.34999999999999998" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJL-jf-Zps">
+                                            <rect key="frame" x="16" y="8" width="382" height="297"/>
+                                            <color key="backgroundColor" red="0.82472504339999997" green="0.82577730429999996" blue="0.80786415990000005" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="QJL-jf-Zps" secondAttribute="height" multiplier="382:297" id="X7x-fb-VCH"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="n4i-DY-9FV" firstAttribute="leading" secondItem="QJL-jf-Zps" secondAttribute="leading" id="1tj-vZ-std"/>
+                                        <constraint firstItem="n4i-DY-9FV" firstAttribute="leading" secondItem="QJL-jf-Zps" secondAttribute="leading" constant="2" id="1tj-vZ-std"/>
+                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="top" secondItem="QJL-jf-Zps" secondAttribute="top" id="2wh-Y5-Fst"/>
                                         <constraint firstItem="QJL-jf-Zps" firstAttribute="leading" secondItem="J0m-fz-yjO" secondAttribute="leadingMargin" constant="8" id="3mL-MQ-GDx"/>
                                         <constraint firstItem="yId-wt-Nak" firstAttribute="trailing" secondItem="QJL-jf-Zps" secondAttribute="trailing" id="4bd-K8-tmn"/>
                                         <constraint firstItem="n4i-DY-9FV" firstAttribute="top" secondItem="QJL-jf-Zps" secondAttribute="bottom" constant="2" id="6ZZ-1G-WSi"/>
-                                        <constraint firstItem="YPF-Nk-ax0" firstAttribute="leading" secondItem="n4i-DY-9FV" secondAttribute="leading" id="755-YA-uwp"/>
-                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="centerY" secondItem="QJL-jf-Zps" secondAttribute="centerY" id="8xB-Sh-XWc"/>
+                                        <constraint firstItem="YPF-Nk-ax0" firstAttribute="leading" secondItem="n4i-DY-9FV" secondAttribute="leading" constant="1" id="755-YA-uwp"/>
                                         <constraint firstItem="34I-pZ-vTi" firstAttribute="leading" secondItem="YPF-Nk-ax0" secondAttribute="trailing" constant="1" id="9Fc-b8-wDk"/>
                                         <constraint firstItem="yId-wt-Nak" firstAttribute="centerY" secondItem="YPF-Nk-ax0" secondAttribute="centerY" id="AeR-Ry-7Y5"/>
-                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="centerX" secondItem="QJL-jf-Zps" secondAttribute="centerX" id="FcA-gR-kPv"/>
-                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="leading" secondItem="QJL-jf-Zps" secondAttribute="leading" id="ISA-hn-Hqh"/>
-                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="trailing" secondItem="QJL-jf-Zps" secondAttribute="trailing" id="Qrd-5j-KO1"/>
                                         <constraint firstItem="34I-pZ-vTi" firstAttribute="centerY" secondItem="YPF-Nk-ax0" secondAttribute="centerY" id="SYH-0S-E9o"/>
                                         <constraint firstItem="QJL-jf-Zps" firstAttribute="top" secondItem="J0m-fz-yjO" secondAttribute="topMargin" id="Tc2-7H-mQR"/>
-                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="width" secondItem="QJL-jf-Zps" secondAttribute="width" id="Xc8-uR-kiB"/>
+                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="top" secondItem="QJL-jf-Zps" secondAttribute="top" id="Urn-hQ-rG5"/>
+                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="leading" secondItem="QJL-jf-Zps" secondAttribute="trailing" constant="-80" id="bPZ-Zu-FUi"/>
+                                        <constraint firstItem="0sy-5G-9BD" firstAttribute="width" secondItem="QJL-jf-Zps" secondAttribute="height" multiplier="49:297" id="csv-3Q-H5I"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="n4i-DY-9FV" secondAttribute="bottom" constant="19" id="fez-HL-Pc0"/>
-                                        <constraint firstItem="n4i-DY-9FV" firstAttribute="trailing" secondItem="QJL-jf-Zps" secondAttribute="trailing" id="l59-VH-A9K"/>
+                                        <constraint firstItem="n4i-DY-9FV" firstAttribute="trailing" secondItem="QJL-jf-Zps" secondAttribute="trailing" constant="2" id="l59-VH-A9K"/>
                                         <constraint firstItem="YPF-Nk-ax0" firstAttribute="top" secondItem="n4i-DY-9FV" secondAttribute="bottom" constant="3.5" id="ooF-3Q-Wgz"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="QJL-jf-Zps" secondAttribute="trailing" constant="8" id="qWN-cS-NxX"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="2wh-Y5-Fst"/>
+                                            <exclude reference="csv-3Q-H5I"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="aboutLabel" destination="HS9-kc-WL5" id="CaQ-n8-F6W"/>
                                     <outlet property="mainPhoto" destination="QJL-jf-Zps" id="EYh-0D-dPS"/>
                                     <outlet property="priceLable" destination="34I-pZ-vTi" id="7b5-Fx-Mcv"/>
                                     <outlet property="soldLabel" destination="0sy-5G-9BD" id="Iz8-RJ-G1C"/>
@@ -3301,7 +3556,7 @@ This Agreement is effective November 10, 2015</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" showsCancelButton="YES" id="12B-KT-N9S">
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Title of Book or Class#" showsCancelButton="YES" id="12B-KT-N9S">
                             <rect key="frame" x="0.0" y="64" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
@@ -3314,7 +3569,7 @@ This Agreement is effective November 10, 2015</string>
                                 <rect key="frame" x="0.0" y="136" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EwB-ZJ-q4R" id="s4p-3c-5em">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rKa-Aj-acP">
@@ -3325,9 +3580,9 @@ This Agreement is effective November 10, 2015</string>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq5-bd-1Yo">
-                                            <rect key="frame" x="361" y="41" width="38" height="17.5"/>
+                                            <rect key="frame" x="361" y="41" width="38" height="18"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                            <color key="textColor" red="0.51264599119999998" green="0.072851036100000002" blue="0.1109257632" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIQ-8A-EFM">
@@ -3394,7 +3649,7 @@ This Agreement is effective November 10, 2015</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpm-Xr-ABn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1355"/>
+            <point key="canvasLocation" x="2242" y="1260"/>
         </scene>
         <!--My post-->
         <scene sceneID="i5N-tf-wVr">
@@ -3409,7 +3664,7 @@ This Agreement is effective November 10, 2015</string>
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tbp-bk-VIb" id="fBS-Aj-t6q">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A7Q-2L-9ns">
@@ -3442,9 +3697,9 @@ This Agreement is effective November 10, 2015</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBQ-kS-tRX">
-                                            <rect key="frame" x="361" y="41" width="38" height="17.5"/>
+                                            <rect key="frame" x="361" y="41" width="38" height="18"/>
                                             <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
-                                            <color key="textColor" red="0.51264599119999998" green="0.072851036100000002" blue="0.1109257632" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -3486,10 +3741,11 @@ This Agreement is effective November 10, 2015</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSb-xP-8Z9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2695" y="1219"/>
+            <point key="canvasLocation" x="2785" y="1260"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Intro" width="375" height="667"/>
         <image name="Logo" width="1024" height="1024"/>
         <image name="PlaceholderPhoto" width="280" height="280"/>
         <image name="add_person" width="256" height="256"/>
@@ -3501,11 +3757,13 @@ This Agreement is effective November 10, 2015</string>
         <image name="nextButton" width="426" height="88"/>
         <image name="saveButton" width="423" height="88"/>
         <image name="white logo" width="1024" height="1024"/>
+        <image name="whiteButton" width="221" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ITR-nX-yrf"/>
-        <segue reference="Cw4-Ds-SFe"/>
-        <segue reference="Nep-fx-Ehf"/>
         <segue reference="jsL-zd-JiJ"/>
+        <segue reference="ua6-ii-9wd"/>
+        <segue reference="ehK-wd-QJp"/>
+        <segue reference="6Pe-av-hpy"/>
+        <segue reference="Nep-fx-Ehf"/>
     </inferredMetricsTieBreakers>
 </document>

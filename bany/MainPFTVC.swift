@@ -166,7 +166,9 @@ class MainPFTVC : PFQueryTableViewController {
         let price = (object!["priceText"] as! String)
         cell!.priceLable.text = "$\(price)"
         
-
+        //about Lable
+        
+        cell?.aboutLabel.text = (object!["purchasedDate"] as! String)
         
         // time label for posts
         let dateFormatter:NSDateFormatter = NSDateFormatter()

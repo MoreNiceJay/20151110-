@@ -17,14 +17,30 @@ class  UploadFirst: UITableViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var tagTextField: UITextField!
     @IBOutlet weak var bookSwitch: UISwitch!
-    @IBOutlet weak var iclickerSwitch: UISwitch!
     @IBOutlet weak var otherSwitch: UISwitch!
     @IBOutlet weak var titleLabel: UILabel!
     
+    
+    @IBOutlet weak var attendanceLabel: UILabel!
+    @IBOutlet weak var attendanceTextField: UITextField!
+    
+    @IBOutlet weak var hardnessLabel: UILabel!
+    
+    @IBOutlet weak var hardnessTextFeld: UITextField!
+    @IBOutlet weak var assignmentLabel: UILabel!
+    
+    @IBOutlet weak var assignmentTextField: UITextField!
+    
+    @IBOutlet weak var YesRQDLabel: UILabel!
+    @IBOutlet weak var notRQDLabel: UILabel!
+    @IBOutlet weak var bookRQDSwitch: UISwitch!
+    @IBOutlet weak var aboutClassLabel: UILabel!
+    @IBOutlet weak var bookRQDLabel: UILabel!
+    @IBOutlet weak var aboutClassTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     var category : Int = 0
-   
+    var RQD : String = "yes"
     @IBOutlet weak var classLabel: UILabel!
     
    
@@ -103,51 +119,73 @@ class  UploadFirst: UITableViewController {
     @IBAction func bookSwitchIsOn(sender: AnyObject) {
         if (bookSwitch.on == true)
         {
-            category = 1
-            iclickerSwitch.on = false
+            category = 0
             otherSwitch.on = false
+           
             titleLabel.text = "Book title"
             titleTextField.placeholder = "Title of Your book"
-
-            classLabel.text = "Class/author"
-            titleTextField.text = ""
-            tagTextField.placeholder = "ex) Acom203 / Author"
             
-        }
-    }
-    
-    @IBAction func iclickerSwitchIsOn(sender: AnyObject) {
-        if (iclickerSwitch.on == true)
-        {
-            category = 2
-            bookSwitch.on = false
-            otherSwitch.on = false
-            titleTextField.text = "Iclicker"
-            titleTextField.placeholder  = ""
-            classLabel.text = "Battery"
-            tagTextField.placeholder = "ex) No battery / Yes battery"
-            titleLabel.text = "Iclicker"
-
-
+            classLabel.text = "Class"
+            tagTextField.placeholder = "ex) Acom203 "
+            
+            
+            attendanceLabel.text = "Attendence"
+            attendanceTextField.placeholder = "5 (Everyday) to 0(Never)"
+            
+            hardnessLabel.text = "Hardness"
+            hardnessTextFeld.placeholder = "5 (Hard) to 0 (Easy)"
+            
+            assignmentLabel.text = "Assignement"
+            assignmentTextField.placeholder = "5 (Lots) to 0 (None)"
+            
+            bookRQDLabel.text = "Book RQD"
+            notRQDLabel.text = "Not Required"
+            YesRQDLabel.text = "Required"
+            
+            aboutClassLabel.text = "More"
+            aboutClassTextField.placeholder = "Someting more to say about this class?"
             
         }
     }
     
     @IBAction func otherSwitchIsOn(sender: AnyObject) {
-        
         if (otherSwitch.on == true)
         {
-            category = 3
+            category = 1
             bookSwitch.on = false
-            iclickerSwitch.on = false
+            
             titleLabel.text = "Product"
-            classLabel.text = "Model #"
-            titleTextField.text = ""
-            titleTextField.placeholder  = "Brand & Product "
-            tagTextField.placeholder = "ex) A1347"
+            titleTextField.placeholder  = "Brand & Product. ex) Apple MacBook13"
+
+            classLabel.text = "Model#"
+            tagTextField.placeholder = "ex) MD212"
+            
+            
+            
+            
+            
+            attendanceLabel.text = "Condition"
+            attendanceTextField.placeholder = "5 (Everyday) to 0(Never)"
+            
+            hardnessLabel.text = "Purchased Year"
+            hardnessTextFeld.placeholder = "Ex) 2014"
+            
+            assignmentLabel.text = "Original price"
+            assignmentTextField.placeholder = "$"
+            
+            bookRQDLabel.text = "New"
+            notRQDLabel.text = "Used"
+            YesRQDLabel.text = "New"
+            
+            aboutClassLabel.text = "More"
+            aboutClassTextField.placeholder = "Someting more to say about this product?"
+            
+
+            
+            
         }
-        
     }
+    
     
     
     
@@ -163,14 +201,25 @@ class  UploadFirst: UITableViewController {
         startActivityIndicator()
         buttonDisabeld(nextButton)
         
+        if bookRQDSwitch.on == true {
+            RQD = "Yes"
+        }else{
+            RQD = "No"
+        }
+        
         let titleText = titleTextField.text
         let tagText = tagTextField.text
         let priceText = priceTextField.text
-       
+        
+        
+        let attendenceText = attendanceTextField.text
+        let hardnessText = hardnessTextFeld.text
+        let assignmentText = assignmentTextField.text
+        let moreText = aboutClassTextField.text
         
         
         
-        if(!bookSwitch.on && !iclickerSwitch.on && !otherSwitch.on){
+        if(!bookSwitch.on && !otherSwitch.on ){
             buttonEnabled(nextButton)
             
             stopActivityIndicator()
@@ -179,7 +228,7 @@ class  UploadFirst: UITableViewController {
             
             self.alert("Invalid", message : "You must choose a category")
         }else{
-        if titleText!.isEmpty || tagText!.isEmpty || priceText!.isEmpty{
+        if titleText!.isEmpty || tagText!.isEmpty || priceText!.isEmpty || attendenceText!.isEmpty || hardnessText!.isEmpty || assignmentText!.isEmpty {
             
             
             buttonEnabled(nextButton)
@@ -192,6 +241,19 @@ class  UploadFirst: UITableViewController {
             
             
         }else {
+            
+            if  !(moreText!.utf16.count <= 30  ) {
+                // 3보다 크고 16보다 작은게 아니라면
+                buttonEnabled(nextButton)
+                
+                stopActivityIndicator()
+                
+                alert("Invalid", message : "\("More") must be  less than 30 characters")
+            }else if moreText!.isEmpty {
+            
+                
+                aboutClassTextField.text = ""
+            }
             
             if !(titleText!.utf16.count <= 45 && titleText!.utf16.count >= 2 ) {
                 // 3보다 크고 16보다 작은게 아니라면
@@ -223,17 +285,19 @@ class  UploadFirst: UITableViewController {
 
                 self.performSegueWithIdentifier("uploadFirstToUploadSecond", sender: self)
            
-            }
+        
+                }
             
-                
-                
-        }
- 
             }
+        
+            }
+ 
         }
     }
 
- 
+
+
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if (segue.identifier == "uploadFirstToUploadSecond") {
@@ -244,6 +308,15 @@ class  UploadFirst: UITableViewController {
             destViewController.titleText = titleTextField.text!
             destViewController.tagText = tagTextField.text!
             destViewController.priceText = priceTextField.text!
+            destViewController.attendence = attendanceTextField.text!
+            destViewController.hardness  = hardnessTextFeld.text!
+            destViewController.assignment  = assignmentTextField.text!
+            destViewController.bookRQD = RQD
+            
+            destViewController.moreToSay = aboutClassTextField.text
+            
+            
+            
         }
         
         

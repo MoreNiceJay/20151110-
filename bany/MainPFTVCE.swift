@@ -16,6 +16,7 @@ class MainPFTVCE: PFTableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var priceLable: UILabel!
     
+    @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var soldLabel: UILabel!
     @IBOutlet weak var mainPhoto: UIImageView!
     @IBOutlet weak var nickNameLabel: UILabel!

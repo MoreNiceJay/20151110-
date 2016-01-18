@@ -14,6 +14,13 @@ class UploadThird: UITableViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var backPhoto: UIImageView!
     
     @IBOutlet weak var nextButton: UIButton!
+    
+    var attendence : String!
+    var hardness : String!
+    var assignment : String!
+    var bookRQD : String!
+    
+    var moreToSay: String!
     var priceText = String()
     var category = Int()
     var titleText = String()
@@ -106,6 +113,12 @@ class UploadThird: UITableViewController, UIImagePickerControllerDelegate, UINav
             destViewController.photoFront = photoFront
             destViewController.priceText = priceText
             destViewController.photoBack   = backPhoto.image!
+            destViewController.attendence = attendence
+            destViewController.hardness  = hardness
+            destViewController.assignment  = assignment
+            destViewController.bookRQD = bookRQD
+            
+            destViewController.moreToSay = moreToSay
 
         }
     }
